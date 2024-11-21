@@ -20,4 +20,4 @@ spring.r2dbc:
   url: r2dbc:postgresql://postgres:5432/assume-db?schema=test-schema
 
 server:
-  port: 8081
+  port: 8080

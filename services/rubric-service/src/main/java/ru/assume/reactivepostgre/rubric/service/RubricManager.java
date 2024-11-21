@@ -33,7 +33,6 @@ public class RubricManager {
                 .flatMap(repository::save)
                 .zipWith(Flux.fromIterable(rubrics), (savedEntity, originalRubric) -> {
                     RubricDomainManagement result = mapper.entityToRubricDomainManagement(savedEntity);
-                    result.setTempId(originalRubric.getTempId());
                     return result;
                 });
     }

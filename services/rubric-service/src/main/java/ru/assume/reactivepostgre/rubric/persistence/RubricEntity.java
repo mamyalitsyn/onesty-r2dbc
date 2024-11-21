@@ -10,7 +10,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table("category")
+@Table("rubric")
 public class RubricEntity {
 
     @Id

@@ -14,7 +14,7 @@ public interface RubricMapper {
     RubricEntity rubricDomainManagementToEntity(RubricDomainManagement dto);
 
     @Mapping(target = "order", source = "orderNumber")
-    @Mapping(target = "tempId", ignore = true)
+    @Mapping(target = "categoryName", ignore = true)
     RubricDomainManagement entityToRubricDomainManagement(RubricEntity entity);
 
 }

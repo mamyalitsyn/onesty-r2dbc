@@ -1,20 +1,21 @@
-package ru.assume.reactivepostgre.rubric.model;
+package ru.assume.reactivepostgre.management.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor(force = true)
-public class RubricDomainManagement {
+public class CategoryDomainManagement {
 
     private String id;
     private String name;
     private String imageUrl;
     private Integer order;
-    private String categoryName;
-    private String categoryId;
+    private Set<RoleSubscriptionPermission> searchPermissions;
 }

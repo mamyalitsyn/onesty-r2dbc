@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Movies",
+    "imageUrl": "Movies",
+    "order": 0,
+    "categoryName": "Content"
+  },
+  {
+    "name": "Books",
+    "imageUrl": "Books",
+    "order": 1,
+    "categoryName":  "Content"
+  },
+  {
+    "name": "Music",
+    "imageUrl": "Music",
+    "order": 2,
+    "categoryName":  "Content"
+  },
+  {
+    "name": "Gaming",
+    "imageUrl": "Gaming",
+    "order": 3,
+    "categoryName":  "Content"
+  },
+  {
+    "name": "Internal",
+    "imageUrl": "Internal",
+    "order": 0,
+    "categoryName":  "Values"
+  },
+  {
+    "name": "External",
+    "imageUrl": "External",
+    "order": 1,
+    "categoryName":  "Values"
+  },
+  {
+    "name": "Character",
+    "imageUrl": "Character",
+    "order": 0,
+    "categoryName":  "Persona"
+  },
+  {
+    "name": "Family",
+    "imageUrl": "Family",
+    "order": 1,
+    "categoryName":  "Persona"
+  },
+  {
+    "name": "Habits",
+    "imageUrl": "Habits",
+    "order": 2,
+    "categoryName":  "Persona"
+  },
+  {
+    "name": "Socializing",
+    "imageUrl": "Socializing",
+    "order": 3,
+    "categoryName":  "Persona"
+  },
+  {
+    "name": "Relationships",
+    "imageUrl": "Relationships",
+    "order": 4,
+    "categoryName":  "Persona"
+  },
+  {
+    "name": "Places",
+    "imageUrl": "Places",
+    "order": 0,
+    "categoryName":  "Activities"
+  },
+  {
+    "name": "Leisure",
+    "imageUrl": "Leisure",
+    "order": 1,
+    "categoryName":  "Activities"
+  },
+  {
+    "name": "Passions",
+    "imageUrl": "Passions",
+    "order": 2,
+    "categoryName":  "Activities"
+  },
+  {
+    "name": "Political",
+    "imageUrl": "Political",
+    "order": 0,
+    "categoryName":  "Views"
+  },
+  {
+    "name": "Social",
+    "imageUrl": "Social",
+    "order": 1,
+    "categoryName":  "Views"
+  },
+  {
+    "name": "Spiritual",
+    "imageUrl": "Spiritual",
+    "order": 2,
+    "categoryName":  "Views"
+  }
+]

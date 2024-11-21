@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Content",
+    "imageUrl": "Content",
+    "order": 0,
+    "searchPermissions": [
+      {
+        "role": "VERIFIED_USER",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "FRIEND",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "ADMIN",
+        "subscriptions": ["NONE", "BASIC"]
+      }
+    ]
+  },
+  {
+    "name": "Values",
+    "imageUrl": "Values",
+    "order": 1,
+    "searchPermissions": [
+      {
+        "role": "VERIFIED_USER",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "FRIEND",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "ADMIN",
+        "subscriptions": ["NONE", "BASIC"]
+      }
+    ]
+  },
+  {
+    "name": "Persona",
+    "imageUrl": "Persona",
+    "order": 2,
+    "searchPermissions": [
+      {
+        "role": "VERIFIED_USER",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "FRIEND",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "ADMIN",
+        "subscriptions": ["NONE", "BASIC"]
+      }
+    ]
+  },
+  {
+    "name": "Activities",
+    "imageUrl": "Activities",
+    "order": 3,
+    "searchPermissions": [
+      {
+        "role": "VERIFIED_USER",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "FRIEND",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "ADMIN",
+        "subscriptions": ["NONE", "BASIC"]
+      }
+    ]
+  },
+  {
+    "name": "Views",
+    "imageUrl": "Views",
+    "order": 4,
+    "searchPermissions": [
+      {
+        "role": "VERIFIED_USER",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "FRIEND",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "ADMIN",
+        "subscriptions": ["NONE", "BASIC"]
+      }
+    ]
+  }
+]

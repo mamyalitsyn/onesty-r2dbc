@@ -1,4 +1,4 @@
-package ru.assume.reactivepostgre.rubric.model;
+package ru.assume.reactivepostgre.management.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
