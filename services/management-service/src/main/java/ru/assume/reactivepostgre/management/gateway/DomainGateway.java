@@ -7,16 +7,11 @@ import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Flux;
-import ru.assume.reactivepostgre.management.model.CategoryDomainManagement;
-import ru.assume.reactivepostgre.management.model.ParameterDomainManagement;
-import ru.assume.reactivepostgre.management.model.RubricDomainManagement;
-import ru.assume.reactivepostgre.management.model.TestDomainManagement;
 
 import java.net.URI;
 import java.util.List;
 
 import static java.util.logging.Level.FINE;
-import static reactor.core.publisher.Mono.empty;
 
 @Slf4j
 @Component
@@ -29,34 +24,20 @@ public class DomainGateway {
         this.webClient = webClientBuilder.build();
     }
 
-    public Flux<CategoryDomainManagement> createCategories(List<CategoryDomainManagement> categories) {
-        URI url = UriComponentsBuilder.fromUriString("http://category-service:8080/categoriesAdd").build().toUri();
-        log.debug("persisting new categories");
-        var body = BodyInserters.fromValue(categories);
-        log.debug(body.toString());
-        return webClient.post().uri(url).body(body).retrieve().bodyToFlux(CategoryDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
-    }
+    public <T> Flux<T> createEntities(List<T> entities, String url, Class<T> entityClass) {
+        URI uri = UriComponentsBuilder.fromUriString(url).build().toUri();
+        log.debug("Persisting new entities to {}", url);
+        var body = BodyInserters.fromValue(entities);
 
-    public Flux<RubricDomainManagement> createRubrics(List<RubricDomainManagement> rubrics) {
-        URI url = UriComponentsBuilder.fromUriString("http://rubric-service:8080/rubricsAdd").build().toUri();
-        log.debug("persisting new rubrics");
-        var body = BodyInserters.fromValue(rubrics);
-        log.debug(body.toString());
-        return webClient.post().uri(url).body(body).retrieve().bodyToFlux(RubricDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
-    }
-
-    public Flux<ParameterDomainManagement> createParameters(List<ParameterDomainManagement> parameters) {
-        URI url = UriComponentsBuilder.fromUriString("http://parameter-service:8080/parametersAdd").build().toUri();
-        log.debug("persisting new parameters");
-        var body = BodyInserters.fromValue(parameters);
-        return webClient.post().uri(url).body(body).retrieve().bodyToFlux(ParameterDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
-    }
-
-    public Flux<TestDomainManagement> createTests(List<TestDomainManagement> tests) {
-        URI url = UriComponentsBuilder.fromUriString("http://test-service:8080/testsAdd").build().toUri();
-        log.debug("persisting new tests");
-        var body = BodyInserters.fromValue(tests);
-        log.debug(body.toString());
-        return webClient.post().uri(url).body(body).retrieve().bodyToFlux(TestDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
+        return webClient.post()
+                .uri(uri)
+                .body(body)
+                .retrieve()
+                .bodyToFlux(entityClass)
+                .log(log.getName(), FINE)
+                .onErrorResume(error -> {
+                    log.error("Error persisting entities: {}", error.getMessage());
+                    return Flux.empty();
+                });
     }
 }

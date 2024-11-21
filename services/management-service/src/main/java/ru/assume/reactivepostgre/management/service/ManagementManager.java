@@ -31,7 +31,9 @@ public class ManagementManager {
     private final DomainGateway gateway;
 
     public Mono<Void> init() {
-        return gateway.createCategories(getObjectsFromResources("categoriesDomainInit", CategoryDomainManagement[].class))
+        return gateway.createEntities(getObjectsFromResources("categoriesDomainInit", CategoryDomainManagement[].class),
+                        "http://category-service:8080/categoriesAdd",
+                        CategoryDomainManagement.class)
                 .collectList()
                 .doOnNext(categories -> log.info("{} categories were persisted successfully", categories.size()))
                 .flatMap(categories -> {
@@ -43,7 +45,9 @@ public class ManagementManager {
                         rubric.setCategoryId(categoryMap.get(rubric.getCategoryName()));
                     }
 
-                    return gateway.createRubrics(rubrics)
+                    return gateway.createEntities(rubrics,
+                                    "http://rubric-service:8080/rubricsAdd",
+                                    RubricDomainManagement.class)
                             .collectList()
                             .doOnNext(createdRubrics -> log.info("{} rubrics were persisted successfully", createdRubrics.size()))
                             .flatMap(createdRubrics -> {
@@ -60,7 +64,9 @@ public class ManagementManager {
                                         parameter.setRubricId(rubricMap.get(parameter.getRubricName()));
                                     }
                                 }
-                                return gateway.createParameters(parameters)
+                                return gateway.createEntities(parameters,
+                                                "http://parameter-service:8080/parametersAdd",
+                                                ParameterDomainManagement.class)
                                         .collectList()
                                         .doOnNext(createdParameters -> log.info("{} parameters were persisted successfully", createdParameters.size())).then(Mono.defer(() -> {
                                             List<TestDomainManagement> tests = getObjectsFromResources("testDomainInit", TestDomainManagement[].class);
@@ -68,7 +74,9 @@ public class ManagementManager {
 
                                             tests.forEach(test -> test.setRubricId(rubricMap.get(test.getRubricName())));
 
-                                            return gateway.createTests(tests)
+                                            return gateway.createEntities(tests,
+                                                            "http://test-service:8080/testsAdd",
+                                                            TestDomainManagement.class)
                                                     .collectList()
                                                     .doOnNext(createdTests -> log.info("{} tests were persisted successfully", createdTests.size()));
                                         }));
