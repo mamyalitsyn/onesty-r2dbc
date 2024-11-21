@@ -10,7 +10,6 @@ import ru.assume.reactivepostgre.rubric.model.RubricDomainShort;
 import ru.assume.reactivepostgre.rubric.persistence.RubricRepository;
 
 import java.util.List;
-import java.util.UUID;
 
 @Slf4j
 @Service
@@ -26,14 +25,8 @@ public class RubricManager {
 
     public Flux<RubricDomainManagement> createRubrics(List<RubricDomainManagement> rubrics) {
         return Flux.fromIterable(rubrics)
-                .map(rubric -> {
-                    rubric.setId(UUID.randomUUID().toString());
-                    return mapper.rubricDomainManagementToEntity(rubric);
-                })
+                .map(mapper::rubricDomainManagementToEntity)
                 .flatMap(repository::save)
-                .zipWith(Flux.fromIterable(rubrics), (savedEntity, originalRubric) -> {
-                    RubricDomainManagement result = mapper.entityToRubricDomainManagement(savedEntity);
-                    return result;
-                });
+                .zipWith(Flux.fromIterable(rubrics), (savedEntity, originalRubric) -> mapper.entityToRubricDomainManagement(savedEntity));
     }
 }

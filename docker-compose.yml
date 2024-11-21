@@ -21,6 +21,16 @@ services:
       postgres:
         condition: service_healthy
 
+  parameter-service:
+    build: services/parameter-service
+    container_name: parameter-service
+    mem_limit: 512m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      postgres:
+        condition: service_healthy
+
   user-test-service:
     build: services/user-test-service
     container_name: user-test-service

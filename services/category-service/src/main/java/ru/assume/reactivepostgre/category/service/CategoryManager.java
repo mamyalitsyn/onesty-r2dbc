@@ -16,7 +16,6 @@ import ru.assume.reactivepostgre.category.persistence.CategoryRepository;
 
 import java.util.List;
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -46,16 +45,12 @@ public class CategoryManager {
 
     private Mono<CategoryDomainManagement> saveCategoryWithPermissions(CategoryDomainManagement categoryDomain) {
         CategoryEntity categoryEntity = categoryMapper.categoryDomainManagementToEntity(categoryDomain);
-        categoryEntity.setId(UUID.randomUUID().toString());
 
         return categoryRepository.save(categoryEntity)
                 .flatMap(savedCategory -> {
                     Set<CategoryPermissionEntity> permissionEntities = categoryDomain.getSearchPermissions()
                             .stream().map(categoryMapper::categoryPermissionToEntity).collect(Collectors.toSet());
-                    permissionEntities.forEach(permission -> {
-                        permission.setId(UUID.randomUUID().toString());
-                        permission.setCategoryId(savedCategory.getId());
-                    });
+                    permissionEntities.forEach(permission -> permission.setCategoryId(savedCategory.getId()));
 
                     return categoryPermissionRepository.saveAll(permissionEntities).collectList()
                             .flatMap(savedPermissions -> {

@@ -8,6 +8,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import ru.assume.reactivepostgre.management.gateway.DomainGateway;
 import ru.assume.reactivepostgre.management.model.CategoryDomainManagement;
+import ru.assume.reactivepostgre.management.model.ParameterDomainManagement;
 import ru.assume.reactivepostgre.management.model.RubricDomainManagement;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
@@ -42,7 +44,25 @@ public class ManagementManager {
 
                     return gateway.createRubrics(rubrics)
                             .collectList()
-                            .doOnNext(createdRubrics -> log.info("{} rubrics were persisted successfully", createdRubrics.size()));
+                            .doOnNext(createdRubrics -> log.info("{} rubrics were persisted successfully", createdRubrics.size()))
+                            .flatMap(createdRubrics -> {
+                                Map<String, String> rubricMap = new HashMap<>();
+                                createdRubrics.forEach(rubric -> rubricMap.put(rubric.getName(), rubric.getId()));
+
+                                List<ParameterDomainManagement> parameters = getObjectsFromResources("parametersDomainInit", ParameterDomainManagement[].class);
+
+                                for (ParameterDomainManagement parameter : parameters) {
+                                    if (Objects.nonNull(parameter.getCategoryName())) {
+                                        parameter.setCategoryId(categoryMap.get(parameter.getCategoryName()));
+                                    }
+                                    if (Objects.nonNull(parameter.getRubricName())) {
+                                        parameter.setRubricId(rubricMap.get(parameter.getRubricName()));
+                                    }
+                                }
+                                return gateway.createParameters(parameters)
+                                        .collectList()
+                                        .doOnNext(createdParameters -> log.info("{} parameters were persisted successfully", createdParameters.size()));
+                            });
                 })
                 .then();
     }

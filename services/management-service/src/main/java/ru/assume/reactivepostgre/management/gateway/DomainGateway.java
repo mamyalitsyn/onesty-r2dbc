@@ -8,6 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Flux;
 import ru.assume.reactivepostgre.management.model.CategoryDomainManagement;
+import ru.assume.reactivepostgre.management.model.ParameterDomainManagement;
 import ru.assume.reactivepostgre.management.model.RubricDomainManagement;
 
 import java.net.URI;
@@ -41,5 +42,12 @@ public class DomainGateway {
         var body = BodyInserters.fromValue(rubrics);
         log.debug(body.toString());
         return webClient.post().uri(url).body(body).retrieve().bodyToFlux(RubricDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
+    }
+
+    public Flux<ParameterDomainManagement> createParameters(List<ParameterDomainManagement> parameters) {
+        URI url = UriComponentsBuilder.fromUriString("http://parameter-service:8080/parametersAdd").build().toUri();
+        log.debug("persisting new parameters");
+        var body = BodyInserters.fromValue(parameters);
+        return webClient.post().uri(url).body(body).retrieve().bodyToFlux(ParameterDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
     }
 }

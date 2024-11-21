@@ -1,0 +1,18 @@
+server.port: 7777
+
+spring.r2dbc:
+  url: r2dbc:postgresql://localhost:5432/assume-db?schema=test-schema
+  username: admin
+  password: admin
+---
+
+spring:
+  config:
+    activate:
+      on-profile: docker
+
+spring.r2dbc:
+  url: r2dbc:postgresql://postgres:5432/assume-db?schema=test-schema
+
+server:
+  port: 8080

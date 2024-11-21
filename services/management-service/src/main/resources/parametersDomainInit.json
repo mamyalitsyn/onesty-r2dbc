@@ -1,0 +1,722 @@
+[
+  {
+    "name": "geek",
+    "about": "about",
+    "order": 0,
+    "categoryName": "Content"
+  },
+  {
+    "name": "fiction",
+    "about": "about",
+    "order": 1,
+    "categoryName": "Content"
+  },
+  {
+    "name": "realism",
+    "about": "about",
+    "order": 2,
+    "categoryName": "Content"
+  },
+  {
+    "name": "reflective",
+    "about": "about",
+    "order": 3,
+    "categoryName": "Content"
+  },
+  {
+    "name": "omnivore",
+    "about": "about",
+    "order": 4,
+    "categoryName": "Content"
+  },
+  {
+    "name": "non-fiction",
+    "about": "about",
+    "order": 5,
+    "categoryName": "Content"
+  },
+  {
+    "name": "fantasy",
+    "about": "about",
+    "order": 6,
+    "categoryName": "Content"
+  },
+  {
+    "name": "entertaining",
+    "about": "about",
+    "order": 7,
+    "categoryName": "Content"
+  },
+  {
+    "name": "materialism",
+    "about": "about",
+    "order": 0,
+    "categoryName": "Values"
+  },
+  {
+    "name": "challenge",
+    "about": "about",
+    "order": 1,
+    "categoryName": "Values"
+  },
+  {
+    "name": "internal focus",
+    "about": "about",
+    "order": 2,
+    "categoryName": "Values"
+  },
+  {
+    "name": "self-reliance",
+    "about": "about",
+    "order": 3,
+    "categoryName": "Values"
+  },
+  {
+    "name": "spirituality",
+    "about": "about",
+    "order": 4,
+    "categoryName": "Values"
+  },
+  {
+    "name": "stability",
+    "about": "about",
+    "order": 5,
+    "categoryName": "Values"
+  },
+  {
+    "name": "external focus",
+    "about": "about",
+    "order": 6,
+    "categoryName": "Values"
+  },
+  {
+    "name": "destiny",
+    "about": "about",
+    "order": 7,
+    "categoryName": "Values"
+  },
+  {
+    "name": "self-control",
+    "about": "about",
+    "order": 0,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "planning",
+    "about": "about",
+    "order": 1,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "extraversion",
+    "about": "about",
+    "order": 2,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "logic",
+    "about": "about",
+    "order": 3,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "expressiveness",
+    "about": "about",
+    "order": 4,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "spontaneity",
+    "about": "about",
+    "order": 5,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "introversion",
+    "about": "about",
+    "order": 6,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "emotion",
+    "about": "about",
+    "order": 7,
+    "categoryName": "Persona"
+  },
+  {
+    "name": "active",
+    "about": "about",
+    "order": 0,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "nature",
+    "about": "about",
+    "order": 1,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "creation",
+    "about": "about",
+    "order": 2,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "hobby",
+    "about": "about",
+    "order": 3,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "calm",
+    "about": "about",
+    "order": 4,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "culture",
+    "about": "about",
+    "order": 5,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "consumption",
+    "about": "about",
+    "order": 6,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "passion",
+    "about": "about",
+    "order": 7,
+    "categoryName": "Activities"
+  },
+  {
+    "name": "activism",
+    "about": "about",
+    "order": 0,
+    "categoryName": "Views"
+  },
+  {
+    "name": "liberal",
+    "about": "about",
+    "order": 1,
+    "categoryName": "Views"
+  },
+  {
+    "name": "collectivism",
+    "about": "about",
+    "order": 2,
+    "categoryName": "Views"
+  },
+  {
+    "name": "opposition",
+    "about": "about",
+    "order": 3,
+    "categoryName": "Views"
+  },
+  {
+    "name": "neutrality",
+    "about": "about",
+    "order": 4,
+    "categoryName": "Views"
+  },
+  {
+    "name": "conservative",
+    "about": "about",
+    "order": 5,
+    "categoryName": "Views"
+  },
+  {
+    "name": "individualism",
+    "about": "about",
+    "order": 6,
+    "categoryName": "Views"
+  },
+  {
+    "name": "conformity",
+    "about": "about",
+    "order": 7,
+    "categoryName": "Views"
+  },
+  {
+    "name": "action",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "comedy",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "documentary",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "drama",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "horror",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "sci-fi / fantasy",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "thriller",
+    "about": "about",
+    "rubricName": "Movies"
+  },
+  {
+    "name": "reading frequency",
+    "about": "about",
+    "rubricName": "Books"
+  },
+  {
+    "name": "non-fiction",
+    "about": "about",
+    "rubricName": "Books"
+  },
+  {
+    "name": "realism",
+    "about": "about",
+    "rubricName": "Books"
+  },
+  {
+    "name": "sci-fi / fantasy",
+    "about": "about",
+    "rubricName": "Books"
+  },
+  {
+    "name": "classical literature",
+    "about": "about",
+    "rubricName": "Books"
+  },
+  {
+    "name": "contemporary",
+    "about": "about",
+    "rubricName": "Books"
+  },
+  {
+    "name": "moody and atmosphere",
+    "about": "about",
+    "rubricName": "Music"
+  },
+  {
+    "name": "energetic",
+    "about": "about",
+    "rubricName": "Music"
+  },
+  {
+    "name": "acoustic",
+    "about": "about",
+    "rubricName": "Music"
+  },
+  {
+    "name": "electronic",
+    "about": "about",
+    "rubricName": "Music"
+  },
+  {
+    "name": "solo games",
+    "about": "about",
+    "rubricName": "Gaming"
+  },
+  {
+    "name": "cooperative",
+    "about": "about",
+    "rubricName": "Gaming"
+  },
+  {
+    "name": "casual",
+    "about": "about",
+    "rubricName": "Gaming"
+  },
+  {
+    "name": "hardcore",
+    "about": "about",
+    "rubricName": "Gaming"
+  },
+  {
+    "name": "personal growth",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "integrity and authenticity",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "responsibility",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "harmony and gratitude",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "resilience",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "faith",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "justice",
+    "about": "about",
+    "rubricName": "Internal"
+  },
+  {
+    "name": "family",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "friendship",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "empathy",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "social status",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "social responsibility",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "material success",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "loyalty",
+    "about": "about",
+    "rubricName": "External"
+  },
+  {
+    "name": "introversion",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "extraversion",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "logical mindset",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "emotionality",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "optimism",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "drive for novelty",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "openness",
+    "about": "about",
+    "rubricName": "Character"
+  },
+  {
+    "name": "family bonding",
+    "about": "about",
+    "rubricName": "Family"
+  },
+  {
+    "name": "parental separation",
+    "about": "about",
+    "rubricName": "Family"
+  },
+  {
+    "name": "family affection",
+    "about": "about",
+    "rubricName": "Family"
+  },
+  {
+    "name": "family openness",
+    "about": "about",
+    "rubricName": "Family"
+  },
+  {
+    "name": "financial planning",
+    "about": "about",
+    "rubricName": "Habits"
+  },
+  {
+    "name": "neat freak",
+    "about": "about",
+    "rubricName": "Habits"
+  },
+  {
+    "name": "early bird",
+    "about": "about",
+    "rubricName": "Habits"
+  },
+  {
+    "name": "night owl",
+    "about": "about",
+    "rubricName": "Habits"
+  },
+  {
+    "name": "self-care enthusiasm",
+    "about": "about",
+    "rubricName": "Habits"
+  },
+  {
+    "name": "screen time",
+    "about": "about",
+    "rubricName": "Habits"
+  },
+  {
+    "name": "physical aspect",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "emotional aspect",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "intellectual aspect",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "possessiveness",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "sense of belonging",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "sense of independence",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "importance of giving",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "importance of receiving",
+    "about": "about",
+    "rubricName": "Socializing"
+  },
+  {
+    "name": "words of affirmation",
+    "about": "about",
+    "rubricName": "Relationships"
+  },
+  {
+    "name": "acts of service",
+    "about": "about",
+    "rubricName": "Relationships"
+  },
+  {
+    "name": "receiving gifts",
+    "about": "about",
+    "rubricName": "Relationships"
+  },
+  {
+    "name": "quality time",
+    "about": "about",
+    "rubricName": "Relationships"
+  },
+  {
+    "name": "physical touch",
+    "about": "about",
+    "rubricName": "Relationships"
+  },
+  {
+    "name": "southern regions",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "northern regions",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "social venues",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "quiet spots",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "trendy environment",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "historical setting",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "nature",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "cultural places",
+    "about": "about",
+    "rubricName": "Places"
+  },
+  {
+    "name": "active leisure",
+    "about": "about",
+    "rubricName": "Leisure"
+  },
+  {
+    "name": "relaxing pastime",
+    "about": "about",
+    "rubricName": "Leisure"
+  },
+  {
+    "name": "partying",
+    "about": "about",
+    "rubricName": "Leisure"
+  },
+  {
+    "name": "growth-oriented",
+    "about": "about",
+    "rubricName": "Leisure"
+  },
+  {
+    "name": "creative and artistic",
+    "about": "about",
+    "rubricName": "Passions"
+  },
+  {
+    "name": "physical",
+    "about": "about",
+    "rubricName": "Passions"
+  },
+  {
+    "name": "outdoor",
+    "about": "about",
+    "rubricName": "Passions"
+  },
+  {
+    "name": "intellectual",
+    "about": "about",
+    "rubricName": "Passions"
+  },
+  {
+    "name": "socially oriented",
+    "about": "about",
+    "rubricName": "Passions"
+  },
+  {
+    "name": "political engagement",
+    "about": "about",
+    "rubricName": "Political"
+  },
+  {
+    "name": "patriotism",
+    "about": "about",
+    "rubricName": "Political"
+  },
+  {
+    "name": "authority trust",
+    "about": "about",
+    "rubricName": "Political"
+  },
+  {
+    "name": "liberal",
+    "about": "about",
+    "rubricName": "Social"
+  },
+  {
+    "name": "conservative",
+    "about": "about",
+    "rubricName": "Social"
+  },
+  {
+    "name": "self-orientation",
+    "about": "about",
+    "rubricName": "Social"
+  },
+  {
+    "name": "collectivism",
+    "about": "about",
+    "rubricName": "Social"
+  },
+  {
+    "name": "privacy oriented",
+    "about": "about",
+    "rubricName": "Social"
+  },
+  {
+    "name": "social justice",
+    "about": "about",
+    "rubricName": "Social"
+  },
+  {
+    "name": "creationism",
+    "about": "about",
+    "rubricName": "Spiritual"
+  },
+  {
+    "name": "belief in afterlife",
+    "about": "about",
+    "rubricName": "Spiritual"
+  },
+  {
+    "name": "religiousness",
+    "about": "about",
+    "rubricName": "Spiritual"
+  },
+  {
+    "name": "belief in reincarnation",
+    "about": "about",
+    "rubricName": "Spiritual"
+  },
+  {
+    "name": "spiritual practices",
+    "about": "about",
+    "rubricName": "Spiritual"
+  }
+]
