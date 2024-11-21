@@ -1,0 +1,3 @@
+include ':services:category-service'
+include ':services:rubric-service'
+include ':services:user-test-service'

@@ -1,0 +1,12 @@
+spring init \
+--boot-version=3.3.0 \
+--build=gradle \
+--java-version=21 \
+--packaging=jar \
+--name=management-service \
+--package-name=ru.assume.reactivepostgre.management \
+--groupId=ru.assume.reactivepostgre.management \
+--dependencies=actuator,webflux \
+--version=1.0.0-SNAPSHOT \
+--type=gradle-project \
+management-service
