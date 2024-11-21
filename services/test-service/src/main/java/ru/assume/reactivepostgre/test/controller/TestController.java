@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import ru.assume.reactivepostgre.test.model.TestDomainManagement;
+import ru.assume.reactivepostgre.test.service.TestManager;
 
 import java.util.List;
 
@@ -15,9 +16,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TestController {
 
+    private final TestManager manager;
+
     @PostMapping("/testsAdd")
     Flux<TestDomainManagement> createTests(@RequestBody List<TestDomainManagement> tests) {
         log.info("persisting {} new tests", tests.size());
-        return Flux.fromIterable(tests);
+        return manager.createTests(tests);
     }
 }

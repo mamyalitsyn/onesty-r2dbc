@@ -53,3 +53,13 @@ CREATE TABLE "test-schema".test (
     CONSTRAINT test_pkey PRIMARY KEY (id),
     CONSTRAINT test_rubric_fkey FOREIGN KEY (rubric_id) REFERENCES "test-schema".rubric(id)
 );
+
+CREATE TABLE "test-schema".test_parameter (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    about varchar(1024) NULL,
+    "name" varchar(255) NULL,
+    test_id varchar(255) NULL,
+    "version" BIGINT DEFAULT 0,
+    CONSTRAINT test_param_pkey PRIMARY KEY (id),
+    CONSTRAINT test_param_fkey FOREIGN KEY (test_id) REFERENCES "test-schema".test(id)
+);

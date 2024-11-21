@@ -1,7 +1,8 @@
 package ru.assume.reactivepostgre.test.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -10,9 +11,9 @@ import lombok.*;
 public class TestDomainManagement {
 
     private String id;
-    private String tempId;
     private String name;
-    private String categoryId;
     private String rubricId;
+    private String rubricName;
     private Integer order;
+    private List<TestParameter> parameters;
 }

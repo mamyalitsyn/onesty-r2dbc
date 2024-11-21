@@ -522,6 +522,36 @@
     "permissions": []
   },
   {
+    "name": "Social Self-Esteem",
+    "rubricName": "Character",
+    "order" : 0,
+    "parameters": [
+      {
+        "id": "d1aee047-a08b-4299-bb94-41ff52131e66",
+        "name": "Social fit",
+        "about": "This parameter shows how you see yourself fitting into a group and connecting with others.\n\nHigher scores suggest you are open and trusting towards the people around you. \n\nLower scores may point to a sense of isolation or a natural tendency to view your environment as unfriendly or suspicious."
+      },
+      {
+        "id": "464e0434-3009-4065-8671-604849584642",
+        "name": "Appearance perception",
+        "about": "Appearance is one of the most subjective factors, how we see ourselves is largely a matter of personal choice and self-perception, often independent of formal standards, norms, or others' opinions.\n\nIn this test, this criterion reflects how sensitive you are to others' opinions about your appearance. The higher the score, the less sensitive you are."
+      },
+      {
+        "id": "28254094-1875-4346-8949-8ba6c45a32ca",
+        "name": "Failure management",
+        "about": "High scores in this parameter indicate a strong tolerance for risk and potential failure. Lower scores are typical of people with pronounced perfectionism and high levels of self-criticism.\n\nThe way we handle failure can impact how we see ourselves in the eyes of others, our self-esteem, and our willingness to seize every interesting opportunity."
+      },
+      {
+        "id": "fdfca602-faab-4c8b-83f0-ae42286b05ff",
+        "name": "Pride",
+        "about": "This parameter describes your sensitivity to criticism or disagreement.\n\nA high score reflects low sensitivity and openness to feedback in any form—your self-perception is barely affected.\n\nLow scores may indicate sensitive areas that, when touched, push you into a defensive mode."
+      }
+    ],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
     "name": "Internal Self-Esteem",
     "rubricName": "Character",
     "order" : 1,

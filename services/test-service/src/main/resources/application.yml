@@ -1,5 +1,10 @@
 server.port: 7777
 
+logging:
+  level:
+    io.r2dbc.postgresql.QUERY: DEBUG
+    io.r2dbc.postgresql.PARAM: DEBUG
+
 spring.r2dbc:
   url: r2dbc:postgresql://localhost:5432/assume-db?schema=test-schema
   username: admin
