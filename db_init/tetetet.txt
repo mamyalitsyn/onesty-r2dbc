@@ -3,10 +3,10 @@ spring init \
 --build=gradle \
 --java-version=21 \
 --packaging=jar \
---name=parameter-service \
---package-name=ru.assume.reactivepostgre.parameter \
---groupId=ru.assume.reactivepostgre.parameter \
+--name=test-service \
+--package-name=ru.assume.reactivepostgre.test \
+--groupId=ru.assume.reactivepostgre.test \
 --dependencies=actuator,webflux \
 --version=1.0.0-SNAPSHOT \
 --type=gradle-project \
-parameter-service
+test-service

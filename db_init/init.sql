@@ -43,3 +43,13 @@ CREATE TABLE "test-schema".parameter (
     CONSTRAINT parameter_category_fkey FOREIGN KEY (category_id) REFERENCES "test-schema".category(id),
     CONSTRAINT parameter_rubric_fkey FOREIGN KEY (rubric_id) REFERENCES "test-schema".rubric(id)
 );
+
+CREATE TABLE "test-schema".test (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    "name" varchar(255) NULL,
+    order_number int4 NULL,
+    rubric_id varchar(255) NULL,
+    "version" BIGINT DEFAULT 0,
+    CONSTRAINT test_pkey PRIMARY KEY (id),
+    CONSTRAINT test_rubric_fkey FOREIGN KEY (rubric_id) REFERENCES "test-schema".rubric(id)
+);

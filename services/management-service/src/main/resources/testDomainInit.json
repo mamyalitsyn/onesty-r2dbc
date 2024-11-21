@@ -1,0 +1,1881 @@
+[
+  {
+    "name": "Cinema Love Meter",
+    "rubricName": "Movies",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Life Story Genre",
+    "rubricName": "Movies",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Setting You’d Thrive In",
+    "rubricName": "Movies",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Classic Character Alter Ego",
+    "rubricName": "Movies",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Classic Character Crush",
+    "rubricName": "Movies",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Movie Quote Defining You",
+    "rubricName": "Movies",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Film Crew Position Fit",
+    "rubricName": "Movies",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Superpower Set",
+    "rubricName": "Movies",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Villain Origin",
+    "rubricName": "Movies",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Villain You'd Fall For",
+    "rubricName": "Movies",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "They Missed You: Casting Fail",
+    "rubricName": "Movies",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Sequel Role for You",
+    "rubricName": "Movies",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Perfect Movie Night",
+    "rubricName": "Movies",
+    "order" : 12,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Books Love Meter",
+    "rubricName": "Books",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Lore Geek Score",
+    "rubricName": "Books",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Literary Twin",
+    "rubricName": "Books",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Fictional World Fit",
+    "rubricName": "Books",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Hero Torment Mastery",
+    "rubricName": "Books",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Theme Resonance",
+    "rubricName": "Books",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Literary Impact",
+    "rubricName": "Books",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Escapism",
+    "rubricName": "Books",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Hero Archetypes",
+    "rubricName": "Books",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Music Love Meter",
+    "rubricName": "Music",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Taste Versatility",
+    "rubricName": "Music",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Music Era",
+    "rubricName": "Music",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Band Role Fit",
+    "rubricName": "Music",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Perfect Music Setting",
+    "rubricName": "Music",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Music & Memories",
+    "rubricName": "Music",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Which Hit Is About You",
+    "rubricName": "Music",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Superstar Vibe",
+    "rubricName": "Music",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Gaming Love Meter",
+    "rubricName": "Gaming",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Lore Geek Score",
+    "rubricName": "Gaming",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Gamer Motivation Type",
+    "rubricName": "Gaming",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Casual or Hardcore",
+    "rubricName": "Gaming",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Setting You’d Thrive In",
+    "rubricName": "Gaming",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Hero or Villain",
+    "rubricName": "Gaming",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Personality Genre",
+    "rubricName": "Gaming",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Your Character Class",
+    "rubricName": "Gaming",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Personal Growth",
+    "rubricName": "Internal",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Integrity",
+    "rubricName": "Internal",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Health & Wellness",
+    "rubricName": "Internal",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Achievement Mindset",
+    "rubricName": "Internal",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Modesty",
+    "rubricName": "Internal",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Conformity",
+    "rubricName": "Internal",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Security & Stability",
+    "rubricName": "Internal",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Hedonism",
+    "rubricName": "Internal",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Novelty Drive",
+    "rubricName": "Internal",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Source of Motivation",
+    "rubricName": "Internal",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Freedom & Independence",
+    "rubricName": "Internal",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Life Purpose Awareness",
+    "rubricName": "Internal",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Love",
+    "rubricName": "External",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Beauty & Aesthetics",
+    "rubricName": "External",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Kindness & Compassion",
+    "rubricName": "External",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Relationships & Family",
+    "rubricName": "External",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Traditions",
+    "rubricName": "External",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Wealth",
+    "rubricName": "External",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Power",
+    "rubricName": "External",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Reality Exploration",
+    "rubricName": "External",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Internal Self-Esteem",
+    "rubricName": "Character",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": [
+      {
+        "role": "BLOCKED_USER",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "SUSPENDED_USER",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "GENERAL_AUDIENCE",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "VERIFIED_USER",
+        "subscriptions": ["BASIC"]
+      },
+      {
+        "role": "FRIEND",
+        "subscriptions": ["NONE", "BASIC"]
+      },
+      {
+        "role": "ADMIN",
+        "subscriptions": ["NONE", "BASIC"]
+      }
+    ]
+  },
+  {
+    "name": "Assertiveness",
+    "rubricName": "Character",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Agreeableness",
+    "rubricName": "Character",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Emotional Resilience",
+    "rubricName": "Character",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Control Behavior",
+    "rubricName": "Character",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Critical Attitude",
+    "rubricName": "Character",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Critical Thinking",
+    "rubricName": "Character",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Decision Making",
+    "rubricName": "Character",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Discipline",
+    "rubricName": "Character",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Confidence",
+    "rubricName": "Character",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Altruism",
+    "rubricName": "Character",
+    "order" : 12,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Empathy",
+    "rubricName": "Character",
+    "order" : 13,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Anxiety",
+    "rubricName": "Character",
+    "order" : 14,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Extraversion & Introversion",
+    "rubricName": "Character",
+    "order" : 15,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Forgiveness & Grudges",
+    "rubricName": "Character",
+    "order" : 16,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Life Satisfaction",
+    "rubricName": "Character",
+    "order" : 17,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Narcissism",
+    "rubricName": "Character",
+    "order" : 18,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Perfectionism",
+    "rubricName": "Character",
+    "order" : 19,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Personal Flexibility",
+    "rubricName": "Character",
+    "order" : 20,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Planning Style",
+    "rubricName": "Character",
+    "order" : 21,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Positive Mindset",
+    "rubricName": "Character",
+    "order" : 22,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Present or Future Focus",
+    "rubricName": "Character",
+    "order" : 23,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Procrastination Profile",
+    "rubricName": "Character",
+    "order" : 24,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Productivity Blockers",
+    "rubricName": "Character",
+    "order" : 25,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Responsibility",
+    "rubricName": "Character",
+    "order" : 26,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Risk Tolerance",
+    "rubricName": "Character",
+    "order" : 27,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Role Model Influences",
+    "rubricName": "Character",
+    "order" : 28,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Self-Awareness",
+    "rubricName": "Character",
+    "order" : 29,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Stress Management",
+    "rubricName": "Character",
+    "order" : 30,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Stress Responses",
+    "rubricName": "Character",
+    "order" : 31,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Temperament",
+    "rubricName": "Character",
+    "order" : 32,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Willpower",
+    "rubricName": "Character",
+    "order" : 33,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Parent-Child Relationship",
+    "rubricName": "Family",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Family Expectations Impact",
+    "rubricName": "Family",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Family Role in Self-Esteem",
+    "rubricName": "Family",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Family Structure Influence",
+    "rubricName": "Family",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Childhood & Social Skills",
+    "rubricName": "Family",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Family Attachment Style",
+    "rubricName": "Family",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Family Tradition Value",
+    "rubricName": "Family",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Communication Patterns",
+    "rubricName": "Family",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Conflict Resolution Styles",
+    "rubricName": "Family",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Family Support",
+    "rubricName": "Family",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Early Bird or Night Owl",
+    "rubricName": "Habits",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Time Management",
+    "rubricName": "Habits",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Diet & Nutrition",
+    "rubricName": "Habits",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Spending Style",
+    "rubricName": "Habits",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Fitness Profile",
+    "rubricName": "Habits",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Self-Care",
+    "rubricName": "Habits",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Neatness",
+    "rubricName": "Habits",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Sleeping Habits",
+    "rubricName": "Habits",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Digital Behavior",
+    "rubricName": "Habits",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Dopamine Traps",
+    "rubricName": "Habits",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Habit Satisfaction",
+    "rubricName": "Habits",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Openness",
+    "rubricName": "Socializing",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Friendship Patterns",
+    "rubricName": "Socializing",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Personal Boundaries",
+    "rubricName": "Socializing",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Communication Style",
+    "rubricName": "Socializing",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Challenges Profile",
+    "rubricName": "Socializing",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Influence & Leadership",
+    "rubricName": "Socializing",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Collaborativeness",
+    "rubricName": "Socializing",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Attachment Style",
+    "rubricName": "Socializing",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Conflict Handling",
+    "rubricName": "Socializing",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Feedback Approach",
+    "rubricName": "Socializing",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Relationship Goals",
+    "rubricName": "Relationships",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Partner Essentials",
+    "rubricName": "Relationships",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Love Language",
+    "rubricName": "Relationships",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Relationship Patterns",
+    "rubricName": "Relationships",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Romance Attachment Style",
+    "rubricName": "Relationships",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Commitment & Loyalty",
+    "rubricName": "Relationships",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Jealousy & Trust",
+    "rubricName": "Relationships",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Control Tendencies",
+    "rubricName": "Relationships",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Personal Space",
+    "rubricName": "Relationships",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Roles & Responsibilities",
+    "rubricName": "Relationships",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Conflict Management",
+    "rubricName": "Relationships",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Heart or Head",
+    "rubricName": "Relationships",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Exchange Balance",
+    "rubricName": "Relationships",
+    "order" : 12,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Relationship Satisfaction",
+    "rubricName": "Relationships",
+    "order" : 13,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Vacation Style",
+    "rubricName": "Places",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Travel Companions Choice",
+    "rubricName": "Places",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Climate Preference",
+    "rubricName": "Places",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Comfort or Adventure",
+    "rubricName": "Places",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Outdoor or Indoor",
+    "rubricName": "Places",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Modern or Historic",
+    "rubricName": "Places",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Cultural or Natural",
+    "rubricName": "Places",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Urban or Rural",
+    "rubricName": "Places",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Setting",
+    "rubricName": "Places",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Environment Dynamics",
+    "rubricName": "Places",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Ideal Home Environment",
+    "rubricName": "Places",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Activity Style",
+    "rubricName": "Leisure",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Leisure Motivation",
+    "rubricName": "Leisure",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Work-Life Balance",
+    "rubricName": "Leisure",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Experience Curiosity",
+    "rubricName": "Leisure",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Relaxation Preferences",
+    "rubricName": "Leisure",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Engagement",
+    "rubricName": "Leisure",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Tech Enthusiasm",
+    "rubricName": "Leisure",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Daytime or Nightlife",
+    "rubricName": "Leisure",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Adrenalin Drive",
+    "rubricName": "Leisure",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Physical Challenges",
+    "rubricName": "Leisure",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Fitness Enthusiasm",
+    "rubricName": "Leisure",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Home Improvement & DIY",
+    "rubricName": "Leisure",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Culinary Interest",
+    "rubricName": "Leisure",
+    "order" : 12,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Pet Affection",
+    "rubricName": "Leisure",
+    "order" : 13,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Mindfulness",
+    "rubricName": "Leisure",
+    "order" : 14,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Volunteering",
+    "rubricName": "Leisure",
+    "order" : 15,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Passions as Self-Identity",
+    "rubricName": "Passions",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Personal Growth Impact",
+    "rubricName": "Passions",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Passions Motivation",
+    "rubricName": "Passions",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Artistic Flow",
+    "rubricName": "Passions",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Career Alignment",
+    "rubricName": "Passions",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Long-Term Goals Alignment",
+    "rubricName": "Passions",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Passions & Life Purpose",
+    "rubricName": "Passions",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Political Compass",
+    "rubricName": "Political",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Liberal or Conservative",
+    "rubricName": "Political",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Political Activity",
+    "rubricName": "Political",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Authorities Trust",
+    "rubricName": "Political",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Media Trust",
+    "rubricName": "Political",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Patriotism",
+    "rubricName": "Political",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Foreign Policy Views",
+    "rubricName": "Political",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Globalization",
+    "rubricName": "Political",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Free Speech",
+    "rubricName": "Social",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Religious Freedom",
+    "rubricName": "Social",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Social Justice",
+    "rubricName": "Social",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Criminal Justice",
+    "rubricName": "Social",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Environmental Attitude",
+    "rubricName": "Social",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Gun Control",
+    "rubricName": "Social",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Drug Policy",
+    "rubricName": "Social",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Tech Regulation",
+    "rubricName": "Social",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Diversity",
+    "rubricName": "Social",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Volunteering",
+    "rubricName": "Social",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Immigration Policy",
+    "rubricName": "Social",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Gender Rights",
+    "rubricName": "Social",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Spiritual & Secular Balance",
+    "rubricName": "Spiritual",
+    "order" : 0,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Higher Power Belief",
+    "rubricName": "Spiritual",
+    "order" : 1,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Spiritual Growth Focus",
+    "rubricName": "Spiritual",
+    "order" : 2,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Transcendent Experience",
+    "rubricName": "Spiritual",
+    "order" : 3,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "World Creation",
+    "rubricName": "Spiritual",
+    "order" : 4,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Afterlife",
+    "rubricName": "Spiritual",
+    "order" : 5,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Intuition",
+    "rubricName": "Spiritual",
+    "order" : 6,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Reincarnation & Karma",
+    "rubricName": "Spiritual",
+    "order" : 7,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Fate & Destiny",
+    "rubricName": "Spiritual",
+    "order" : 8,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Spiritual Connections",
+    "rubricName": "Spiritual",
+    "order" : 9,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Spiritual Integration",
+    "rubricName": "Spiritual",
+    "order" : 10,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Mystical Curiosity",
+    "rubricName": "Spiritual",
+    "order" : 11,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Manifestation Beliefs",
+    "rubricName": "Spiritual",
+    "order" : 12,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Alternate Dimensions",
+    "rubricName": "Spiritual",
+    "order" : 13,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Religious or Mixed Views",
+    "rubricName": "Spiritual",
+    "order" : 14,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Philosophy Alignment",
+    "rubricName": "Spiritual",
+    "order" : 15,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Life Purpose",
+    "rubricName": "Spiritual",
+    "order" : 16,
+    "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  }
+]

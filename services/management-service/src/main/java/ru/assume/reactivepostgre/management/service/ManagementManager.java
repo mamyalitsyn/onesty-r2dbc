@@ -10,6 +10,7 @@ import ru.assume.reactivepostgre.management.gateway.DomainGateway;
 import ru.assume.reactivepostgre.management.model.CategoryDomainManagement;
 import ru.assume.reactivepostgre.management.model.ParameterDomainManagement;
 import ru.assume.reactivepostgre.management.model.RubricDomainManagement;
+import ru.assume.reactivepostgre.management.model.TestDomainManagement;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -61,9 +62,20 @@ public class ManagementManager {
                                 }
                                 return gateway.createParameters(parameters)
                                         .collectList()
-                                        .doOnNext(createdParameters -> log.info("{} parameters were persisted successfully", createdParameters.size()));
-                            });
+                                        .doOnNext(createdParameters -> log.info("{} parameters were persisted successfully", createdParameters.size())).then(Mono.defer(() -> {
+                                            List<TestDomainManagement> tests = getObjectsFromResources("testDomainInit", TestDomainManagement[].class);
+                                            log.info("{} tests were parsed correctly", tests.size());
+
+                                            tests.forEach(test -> test.setRubricId(rubricMap.get(test.getRubricName())));
+
+                                            return gateway.createTests(tests)
+                                                    .collectList()
+                                                    .doOnNext(createdTests -> log.info("{} tests were persisted successfully", createdTests.size()));
+                                        }));
+                            })
+                            .doOnError(e -> log.error("Error during rubric creation", e));
                 })
+                .doOnError(e -> log.error("Error during category creation", e))
                 .then();
     }
 

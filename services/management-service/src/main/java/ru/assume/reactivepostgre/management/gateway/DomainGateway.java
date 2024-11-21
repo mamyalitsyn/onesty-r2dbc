@@ -10,6 +10,7 @@ import reactor.core.publisher.Flux;
 import ru.assume.reactivepostgre.management.model.CategoryDomainManagement;
 import ru.assume.reactivepostgre.management.model.ParameterDomainManagement;
 import ru.assume.reactivepostgre.management.model.RubricDomainManagement;
+import ru.assume.reactivepostgre.management.model.TestDomainManagement;
 
 import java.net.URI;
 import java.util.List;
@@ -49,5 +50,13 @@ public class DomainGateway {
         log.debug("persisting new parameters");
         var body = BodyInserters.fromValue(parameters);
         return webClient.post().uri(url).body(body).retrieve().bodyToFlux(ParameterDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
+    }
+
+    public Flux<TestDomainManagement> createTests(List<TestDomainManagement> tests) {
+        URI url = UriComponentsBuilder.fromUriString("http://test-service:8080/testsAdd").build().toUri();
+        log.debug("persisting new tests");
+        var body = BodyInserters.fromValue(tests);
+        log.debug(body.toString());
+        return webClient.post().uri(url).body(body).retrieve().bodyToFlux(TestDomainManagement.class).log(log.getName(), FINE).onErrorResume(error -> empty());
     }
 }
