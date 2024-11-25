@@ -1,4 +1,4 @@
-package ru.assume.reactivepostgre.parameter.model;
+package ru.assume.reactivepostgre.management.model;
 
 import lombok.*;
 

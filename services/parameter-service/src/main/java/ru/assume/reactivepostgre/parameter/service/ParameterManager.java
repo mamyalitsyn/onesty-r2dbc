@@ -24,7 +24,17 @@ public class ParameterManager {
     private final ParameterRepository repository;
 
     public Flux<ParameterDomain> getParametersDomain(String userId) {
-        return Flux.empty();
+        return repository.findAll()
+                .map(parameter -> new ParameterDomain(
+                        parameter.getId(),
+                        parameter.getName(),
+                        parameter.getAbout(),
+                        parameter.getOrderNumber(),
+                        parameter.getCategoryId(),
+                        parameter.getRubricId()
+                ))
+                .doOnNext(parameterDomain -> log.info("found parameter: {}", parameterDomain))
+                .doOnComplete(() -> log.info("All parameters processed"));
     }
 
     public Flux<ParameterDomainManagement> createParameters(List<ParameterDomainManagement> parameters) {

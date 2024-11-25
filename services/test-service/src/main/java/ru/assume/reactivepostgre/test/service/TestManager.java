@@ -5,14 +5,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 import ru.assume.reactivepostgre.test.mapper.TestMapper;
 import ru.assume.reactivepostgre.test.mapper.TestParameterMapper;
+import ru.assume.reactivepostgre.test.model.QuestionDomainManagement;
 import ru.assume.reactivepostgre.test.model.TestDomainManagement;
 import ru.assume.reactivepostgre.test.persistence.*;
 import ru.assume.reactivepostgre.test.persistence.entity.*;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Slf4j
 @Service
@@ -26,6 +27,7 @@ public class TestManager {
     private final TestCardRepository testCardRepository;
     private final TestParameterMapper testParameterMapper;
     private final TestParameterRepository testParameterRepository;
+    private final AnswerParameterRepository answerParameterRepository;
     private final TestParameterValueRepository testParameterValueRepository;
 
     public Flux<Void> createTests(List<TestDomainManagement> tests) {
@@ -91,7 +93,32 @@ public class TestManager {
                 .thenMany(Flux.empty());
     }
 
+    public Mono<Void> updateTestParameters(Map<String, List<QuestionDomainManagement.Parameter>> parameters) {
+        return Flux.fromIterable(parameters.entrySet())
+                .flatMap(entry -> {
+                    String answerId = entry.getKey();
+                    List<QuestionDomainManagement.Parameter> params = entry.getValue();
 
+                    return answerRepository.existsById(answerId)
+                            .flatMapMany(exists -> {
+                                if (!exists) {
+                                    return Flux.error(new IllegalArgumentException("Answer with id " + answerId + " does not exist"));
+                                }
+
+                                return Flux.fromIterable(params)
+                                        .map(param -> {
+                                            AnswerParameterEntity entity = new AnswerParameterEntity();
+                                            entity.setId(null);
+                                            entity.setParameterId(param.getId());
+                                            entity.setAnswerId(answerId);
+                                            entity.setScore(param.getScore());
+                                            return entity;
+                                        })
+                                        .flatMap(answerParameterRepository::save);
+                            });
+                })
+                .then();
+    }
 
     private String findParameterIdByName(List<TestParameterEntity> savedParameters, String parameterName) {
         return savedParameters.stream()

@@ -112,3 +112,14 @@ CREATE TABLE "test-schema".test_answer (
     CONSTRAINT test_answer_pkey PRIMARY KEY (id),
     CONSTRAINT test_answer_fkey FOREIGN KEY (question_id) REFERENCES "test-schema".test_question(id)
 );
+
+CREATE TABLE "test-schema".test_answer_parameter (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    score float8 NULL,
+    answer_id varchar(255) NULL,
+    parameter_id varchar(255) NULL,
+    "version" BIGINT DEFAULT 0,
+    CONSTRAINT test_answer_param_pkey PRIMARY KEY (id),
+    CONSTRAINT test_answer_param_answer_fkey FOREIGN KEY (answer_id) REFERENCES "test-schema".test_answer(id),
+    CONSTRAINT test_answer_param_param_fkey FOREIGN KEY (parameter_id) REFERENCES "test-schema".parameter(id)
+);

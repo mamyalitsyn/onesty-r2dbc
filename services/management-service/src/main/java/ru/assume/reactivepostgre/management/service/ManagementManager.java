@@ -7,17 +7,12 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import ru.assume.reactivepostgre.management.gateway.DomainGateway;
-import ru.assume.reactivepostgre.management.model.CategoryDomainManagement;
-import ru.assume.reactivepostgre.management.model.ParameterDomainManagement;
-import ru.assume.reactivepostgre.management.model.RubricDomainManagement;
-import ru.assume.reactivepostgre.management.model.TestDomainManagement;
+import ru.assume.reactivepostgre.management.model.*;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
@@ -85,6 +80,21 @@ public class ManagementManager {
                 })
                 .doOnError(e -> log.error("Error during category creation", e))
                 .then();
+    }
+
+    public Mono<Void> addParameterForSearch(Map<String, List<QuestionDomainManagement.Parameter>> parameters) {
+        Mono<Set<String>> currentParameterSetMono = gateway.getCurrentParameters()
+                .map(ParameterDomain::getId)
+                .collect(Collectors.toSet());
+
+        List<String> parameterIds = parameters.values().stream().flatMap(Collection::stream).map(QuestionDomainManagement.Parameter::getId).toList();
+
+        return currentParameterSetMono.flatMap(currentParameterSet -> {
+            if (!currentParameterSet.containsAll(parameterIds)) {
+                return Mono.error(new IllegalArgumentException("One or more parameters are not present in current parameters"));
+            }
+            return gateway.persistTestParameters(parameters);
+        });
     }
 
     private <T> List<T> getObjectsFromResources(String fileName, Class<T[]> clazz) {
