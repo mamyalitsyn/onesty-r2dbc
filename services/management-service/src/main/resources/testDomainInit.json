@@ -527,24 +527,68 @@
     "order" : 0,
     "parameters": [
       {
-        "id": "d1aee047-a08b-4299-bb94-41ff52131e66",
         "name": "Social fit",
-        "about": "This parameter shows how you see yourself fitting into a group and connecting with others.\n\nHigher scores suggest you are open and trusting towards the people around you. \n\nLower scores may point to a sense of isolation or a natural tendency to view your environment as unfriendly or suspicious."
+        "about": "This parameter shows how you see yourself fitting into a group and connecting with others.\n\nHigher scores suggest you are open and trusting towards the people around you. \n\nLower scores may point to a sense of isolation or a natural tendency to view your environment as unfriendly or suspicious.",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
       },
       {
-        "id": "464e0434-3009-4065-8671-604849584642",
         "name": "Appearance perception",
-        "about": "Appearance is one of the most subjective factors, how we see ourselves is largely a matter of personal choice and self-perception, often independent of formal standards, norms, or others' opinions.\n\nIn this test, this criterion reflects how sensitive you are to others' opinions about your appearance. The higher the score, the less sensitive you are."
+        "about": "Appearance is one of the most subjective factors, how we see ourselves is largely a matter of personal choice and self-perception, often independent of formal standards, norms, or others' opinions.\n\nIn this test, this criterion reflects how sensitive you are to others' opinions about your appearance. The higher the score, the less sensitive you are.",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
       },
       {
-        "id": "28254094-1875-4346-8949-8ba6c45a32ca",
         "name": "Failure management",
-        "about": "High scores in this parameter indicate a strong tolerance for risk and potential failure. Lower scores are typical of people with pronounced perfectionism and high levels of self-criticism.\n\nThe way we handle failure can impact how we see ourselves in the eyes of others, our self-esteem, and our willingness to seize every interesting opportunity."
+        "about": "High scores in this parameter indicate a strong tolerance for risk and potential failure. Lower scores are typical of people with pronounced perfectionism and high levels of self-criticism.\n\nThe way we handle failure can impact how we see ourselves in the eyes of others, our self-esteem, and our willingness to seize every interesting opportunity.",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
       },
       {
-        "id": "fdfca602-faab-4c8b-83f0-ae42286b05ff",
         "name": "Pride",
-        "about": "This parameter describes your sensitivity to criticism or disagreement.\n\nA high score reflects low sensitivity and openness to feedback in any form—your self-perception is barely affected.\n\nLow scores may indicate sensitive areas that, when touched, push you into a defensive mode."
+        "about": "This parameter describes your sensitivity to criticism or disagreement.\n\nA high score reflects low sensitivity and openness to feedback in any form—your self-perception is barely affected.\n\nLow scores may indicate sensitive areas that, when touched, push you into a defensive mode.",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
       }
     ],
     "cards": [],
@@ -599,6 +643,80 @@
     "rubricName": "Character",
     "order" : 3,
     "parameters": [],
+    "cards": [],
+    "questions": [],
+    "permissions": []
+  },
+  {
+    "name": "Emotional Intelligence",
+    "rubricName": "Character",
+    "order" : 4,
+    "parameters": [
+      {
+        "name": "Detecting emotions",
+        "about": "The ability to accurately recognize and identify emotions in oneself and others. This involves understanding nonverbal signals such as facial expressions, body language, and tone of voice",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
+      },
+      {
+        "name": "Reading Emotions",
+        "about": "The ability to comprehend and interpret the causes and consequences of emotions. This involves understanding how emotions evolve over time and how they influence behavior and thought processes",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
+      },
+      {
+        "name": "Directing Emotions",
+        "about": "The ability to harness emotions to facilitate various cognitive activities. This includes using emotions to enhance thinking, problem-solving, and decision-making",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
+      },
+      {
+        "name": "Self-Regulation",
+        "about": "The ability to regulate and control one's own emotions and those of others. This includes managing emotional responses in various situations and using emotional insight to guide behavior and interactions",
+        "value": [
+          {
+            "maxValue": -10,
+            "minValue": -1,
+            "text": "bad answers"
+          },
+          {
+            "maxValue": 10,
+            "minValue": 0,
+            "text": "good answers"
+          }
+        ]
+      }
+    ],
     "cards": [],
     "questions": [],
     "permissions": []

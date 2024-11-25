@@ -63,3 +63,14 @@ CREATE TABLE "test-schema".test_parameter (
     CONSTRAINT test_param_pkey PRIMARY KEY (id),
     CONSTRAINT test_param_fkey FOREIGN KEY (test_id) REFERENCES "test-schema".test(id)
 );
+
+CREATE TABLE "test-schema".test_parameter_value (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    max_value int4 NULL,
+    min_value int4 NULL,
+    "text" varchar(255) NULL,
+    test_parameter_id varchar(255) NULL,
+    "version" BIGINT DEFAULT 0,
+    CONSTRAINT test_param_value_pkey PRIMARY KEY (id),
+    CONSTRAINT test_param_value_fkey FOREIGN KEY (test_parameter_id) REFERENCES "test-schema".test_parameter(id)
+);
