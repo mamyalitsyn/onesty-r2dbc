@@ -703,7 +703,608 @@
         "strengths": "• Steadfast self-esteem: your strong self-esteem remains steady despite external opinions. You handle difficulties with greater resilience and capability than nearly everyone\n\n• Resilient confidence: you handle criticism gracefully and use it constructively\n\n• Effective relationships: your perfect balance helps you build and maintain meaningful relationships\n\n• Natural leadership: your self-assurance and emotional stability make you a confident leader\n\n• Growth-oriented mindset: you see personal development as a continuous journey driven by internal motivation rather than external validation"
       }
     ],
-    "questions": [],
+    "questions": [
+      {
+        "parameterName": "Social fit",
+        "text": "You overhear someone say something negative about your looks. How do you react?",
+        "answers": [
+          {
+            "id": "4128cc13-fd0b-4288-909f-ebf737f86273",
+            "score": 2,
+            "text": "I'll think if there's any truth to it. Maybe I'll consider it to improve myself",
+            "parameters": []
+          },
+          {
+            "id": "bd8f2502-9bec-498c-83e9-ac27bcfa5fdf",
+            "score": 1,
+            "text": "Everyone has their opinion. It's not my problem",
+            "parameters": []
+          },
+          {
+            "id": "286a6918-e9c3-4af9-9ac5-60ba1eb7fd07",
+            "score": -1,
+            "text": "It will bother me a bit, but won't ruin my mood. I'll forget it in a few days",
+            "parameters": []
+          },
+          {
+            "id": "5b2cf51c-103c-466b-941c-1f9b86a71ad4",
+            "score": -2,
+            "text": "Others might see things more clearly. I'll take it as how people see me",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Social fit",
+        "text": "How do you think people perceive you?",
+        "answers": [
+          {
+            "id": "96691bb3-1d5a-4cf3-90f1-7f64c59e150e",
+            "score": 2,
+            "text": "I make a good impression and attract people right away",
+            "parameters": []
+          },
+          {
+            "id": "94e61d18-cac1-4074-9a9a-96c534181506",
+            "score": 1,
+            "text": "Friendly and open, sometimes neutral",
+            "parameters": []
+          },
+          {
+            "id": "b737dd7c-8374-4e53-bcd9-5bbac68a03cd",
+            "score": -1,
+            "text": "Mostly neutral and indifferent",
+            "parameters": []
+          },
+          {
+            "id": "cee29282-1cc7-4358-baf3-7e495e5e3cb2",
+            "score": -2,
+            "text": "I often sense dislike and bias towards me",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Social fit",
+        "text": "You hear people in your group discussing an event you weren't invited to",
+        "answers": [
+          {
+            "id": "ba45fd07-743d-48f0-9b75-91829847adf8",
+            "score": 2,
+            "text": "There could be many reasons they met without me. I’ll ask someone I trust why I wasn’t invited. Maybe I’ll learn something useful",
+            "parameters": []
+          },
+          {
+            "id": "12d2b53b-1c20-4691-8e9f-f9301189df44",
+            "score": 1,
+            "text": "I won’t be upset, I have my own plans. I might ask what it was about or how it went, or just ignore it, depending on my mood",
+            "parameters": []
+          },
+          {
+            "id": "b39160fd-cb64-4fc3-8021-014b7211ff4a",
+            "score": -1,
+            "text": "I’ll pretend I didn’t hear and walk away, wondering why they met without me",
+            "parameters": []
+          },
+          {
+            "id": "23682a05-2802-48c2-b2c8-53cfe5312ba2",
+            "score": -2,
+            "text": "Maybe they have a problem with me and are discussing the event openly to make a point",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Social fit",
+        "text": "You start a new relationship, and your partner suddenly seems distant",
+        "answers": [
+          {
+            "id": "75f62c4f-d885-4506-801b-f8aa585c7ab6",
+            "score": 2,
+            "text": "Maybe something happened or I misinterpreted it — we don’t know each other well yet. I’ll ask gently or playfully",
+            "parameters": []
+          },
+          {
+            "id": "f8d2ce6e-fd67-4b51-b04c-ed2b2494d8f2",
+            "score": 1,
+            "text": "I’ll ignore it and act normally. It might pass on its own",
+            "parameters": []
+          },
+          {
+            "id": "756ab0ba-7818-45c8-8acd-732020519196",
+            "score": -1,
+            "text": "I’ll review our interactions to understand the reason but won’t the initiative in communication anymore",
+            "parameters": []
+          },
+          {
+            "id": "1d674ee5-db49-415f-9af0-2ef3642a0093",
+            "score": -2,
+            "text": "Some reactions speak for themselves. I’ll respond more coldly next time to show that such behavior is unacceptable",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Social fit",
+        "text": "In a lively group, you tell a joke, but no one laughs",
+        "answers": [
+          {
+            "id": "6964f1ee-06c0-4560-895c-c67590318551",
+            "score": 2,
+            "text": "It happens. Make a witty remark about the joke falling flat and keep chatting",
+            "parameters": []
+          },
+          {
+            "id": "fba79e97-3fda-4e4a-884d-7b420aa03b27",
+            "score": 1,
+            "text": "Take it as a sign to be more careful, continue talking, and don’t dwell on the awkward moment",
+            "parameters": []
+          },
+          {
+            "id": "6c294faa-dc50-4737-a984-cd411a723b6b",
+            "score": -1,
+            "text": "Reflect on the joke and try to figure out what caused the cold reception",
+            "parameters": []
+          },
+          {
+            "id": "7fa07103-1665-4a42-96cb-9835a8f5c5c5",
+            "score": -2,
+            "text": "It’s awkward Whether it’s personal or not, I’ll likely hold back on being too involved",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "How do others' opinions about your appearance affect your self-esteem and self-view?",
+        "answers": [
+          {
+            "id": "f161c52b-e1ab-4529-8e36-aa26ffe32d39",
+            "score": 2,
+            "text": "Appearance is subjective. My self-esteem is based on my own standards, not others' comments",
+            "parameters": []
+          },
+          {
+            "id": "d7a7c4ef-6124-47fd-874c-32269b3c21a4",
+            "score": 1,
+            "text": "Positive comments boost my mood, while I easily ignore any negative",
+            "parameters": []
+          },
+          {
+            "id": "a58834ec-45b6-40c3-9518-06461cdeda52",
+            "score": -1,
+            "text": "There are sensitive areas where criticism can cause temporary discomfort",
+            "parameters": []
+          },
+          {
+            "id": "92ad6ca6-bbfb-46e8-868c-33eda37abe6d",
+            "score": -2,
+            "text": "It’s hard to judge myself fairly. Only a general opinion from others give a clear view",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "Your internal reaction to a compliment about your appearance",
+        "answers": [
+          {
+            "id": "4f45bf60-9227-42b3-9b22-bb9d2f7e866a",
+            "score": 2,
+            "text": "Compliments are nice, but beauty is also in the eye of the beholder",
+            "parameters": []
+          },
+          {
+            "id": "98a21355-a972-44f6-8e81-163aa4d2b4a4",
+            "score": 1,
+            "text": "I’m aware of my qualities and accept compliments gratefully and as expected",
+            "parameters": []
+          },
+          {
+            "id": "c0c083bb-61aa-4fca-a843-733b10b1b030",
+            "score": -1,
+            "text": "Sometimes I feel unsure and don’t always know how to react properly",
+            "parameters": []
+          },
+          {
+            "id": "a019b2db-8b8f-4b76-a17a-fcc6e1253d38",
+            "score": -2,
+            "text": "Compliments can mask irony or personal agendas. I prefer to verify their sincerity",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "Your partner delicately points out what is seen as a flaw in your appearance",
+        "answers": [
+          {
+            "id": "ad1d4ccb-4815-49ca-88a6-91a96f69c972",
+            "score": 2,
+            "text": "I’ll be interested and ask for more details. If it seems valid, I’ll pay attention and try to improve",
+            "parameters": []
+          },
+          {
+            "id": "40b94df3-30e1-46f6-85bf-43826dd4ed28",
+            "score": 1,
+            "text": "I respect my partner’s opinion. I’ll make a mental note of the comment and work on it without discussing it further",
+            "parameters": []
+          },
+          {
+            "id": "8f26f0d4-b301-4a15-a8e2-cd8924e52c6e",
+            "score": -1,
+            "text": "I find such comments inappropriate in a relationship. I’ll ask my partner to avoid making these remarks in the future",
+            "parameters": []
+          },
+          {
+            "id": "e40e0ff0-3e33-4308-9fec-d99db7bf5c60",
+            "score": -2,
+            "text": "Criticism from a close person is very hurtful, regardless of how it’s presented. It might significantly affect my mood",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "Do you change your appearance and style to better fit in with your group or current trends?",
+        "answers": [
+          {
+            "id": "d032baf4-9442-4202-b17e-ed0b1fcfdc1e",
+            "score": 2,
+            "text": "Sometimes I consider dress codes, but usually, I stick to my own style and express my individuality as I wish",
+            "parameters": []
+          },
+          {
+            "id": "8530451a-a580-462d-9616-046098ba0ad6",
+            "score": 1,
+            "text": "I focus on comfort, fit, and material quality. I prefer a classic look that doesn’t stand out too much",
+            "parameters": []
+          },
+          {
+            "id": "76fe3657-18ee-42b9-8019-c40259bf3078",
+            "score": -1,
+            "text": "I use trendy elements and sometimes use style trends popular in my circle",
+            "parameters": []
+          },
+          {
+            "id": "549b04ac-e427-4451-9b78-46ccf7121266",
+            "score": -2,
+            "text": "I like to look up-to-date and impeccable. Not matching trends or the situation can make me feel uncomfortable",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "Do you notice how people react to your appearance when you're out?",
+        "answers": [
+          {
+            "id": "a494c445-eafc-4276-8c0f-5b33018c507b",
+            "score": 2,
+            "text": "I never pay attention to it",
+            "parameters": []
+          },
+          {
+            "id": "dd4c5fd6-fa1b-4c69-ae6f-503c1a90fc28",
+            "score": 1,
+            "text": "I sometimes notice reactions and it boosts my mood",
+            "parameters": []
+          },
+          {
+            "id": "6a805bb5-7d65-40f8-a26b-f29edb1a73c5",
+            "score": -1,
+            "text": "I try not to notice others and often use headphones or a book to block them out",
+            "parameters": []
+          },
+          {
+            "id": "8c099cc0-d4a3-4015-8c46-47fc657fbdfd",
+            "score": -2,
+            "text": "I feel uneasy when I notice people looking at me",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "You’re in a competition and get a lower result than expected",
+        "answers": [
+          {
+            "id": "323c99c3-3b13-4921-9ceb-ab2341f50883",
+            "score": 2,
+            "text": "Wins are not forever, failures are not the end. I’ll accept the result calmly and learn from it for the future",
+            "parameters": []
+          },
+          {
+            "id": "3d18332d-dedf-4d9e-9738-1909764fc51b",
+            "score": 1,
+            "text": "I’ll take some time to process the disappointment but will quickly focus on fixing mistakes",
+            "parameters": []
+          },
+          {
+            "id": "2edb4b0a-777a-4643-a3e0-a56a5d873cfe",
+            "score": -1,
+            "text": "I’ll feel upset but try to calm down, rationalize the failure, and shift my focus to something else",
+            "parameters": []
+          },
+          {
+            "id": "3a2d1d1a-f721-44fa-a841-dd7b11bcb0c5",
+            "score": -2,
+            "text": "I take losses personally and can be deeply affected by them, often dwelling on the emotions for a long time",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Appearance perception",
+        "text": "Your partner correctly asks you to change your behavior to improve your relationship",
+        "answers": [
+          {
+            "id": "930f0836-22c8-4330-a26a-1a7a2b16dd72",
+            "score": 2,
+            "text": "I’ll listen carefully and make sure I understand the request. If it seems reasonable, I’ll work on it and ensure the improvements are visible",
+            "parameters": []
+          },
+          {
+            "id": "786c12c5-2cf5-420c-95b0-f088948a69c3",
+            "score": 1,
+            "text": "My first reaction might be hurt and distance, regardless of how gentle is the feedback. I’ll take time to calm down and then address the comments constructively",
+            "parameters": []
+          },
+          {
+            "id": "78225f34-69e1-4aee-93a0-cb830230d96d",
+            "score": -1,
+            "text": "Criticism from a partner, even if it’s meant to help, can be painful and may make me withdraw",
+            "parameters": []
+          },
+          {
+            "id": "345a190f-55a9-4626-8028-cea40be9e0e3",
+            "score": -2,
+            "text": "I won't be emotional and respond directly to the request. I'll share my own feedback on some aspects instead",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Failure management",
+        "text": "You’re an author who shared your work, but the response was weak or critical. How do you react?",
+        "answers": [
+          {
+            "id": "38533e89-d395-4d86-985d-a416b2c359be",
+            "score": 2,
+            "text": "Positive feedback is nice, but I focus on my own vision. I’ll use constructive criticism to improve ignoring the rest",
+            "parameters": []
+          },
+          {
+            "id": "649728de-2c00-4904-bda1-b9a1d863aaa4",
+            "score": 1,
+            "text": "Next time I'll make sure I reach my target audience. I need only those, who share my vision",
+            "parameters": []
+          },
+          {
+            "id": "dc89582b-03f5-4dc4-8ab7-d37783ff05d1",
+            "score": -1,
+            "text": "I’ll consider the suggestions and try to apply them in the future",
+            "parameters": []
+          },
+          {
+            "id": "32779dd3-122e-45b8-9df3-0acff12dbcc3",
+            "score": -2,
+            "text": "Assessing my own talent is difficult. Since the audience is never wrong, I might doubt my work and hesitate to show it again for a while",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Failure management",
+        "text": "You face a major setback, like losing a job or failing a key goal. How do you handle it?",
+        "answers": [
+          {
+            "id": "45676bfc-8216-487f-b182-3148e07e7c7c",
+            "score": 2,
+            "text": "Failure as part of success. It boosts my energy, I’ll keep pushing forward with even more determination",
+            "parameters": []
+          },
+          {
+            "id": "7d27836f-e45c-423a-afcd-bbbe14e952b0",
+            "score": 1,
+            "text": "I’ll carefully review what went wrong, learn from it, and try again. More attempts lead to better chances",
+            "parameters": []
+          },
+          {
+            "id": "b61333ef-cb3d-4299-8f5c-d02162b4ad90",
+            "score": -1,
+            "text": "It might be time to consider a different career path or life strategy. A new direction might be easier and suit me better",
+            "parameters": []
+          },
+          {
+            "id": "5ac0eaea-a953-4b42-863f-751d30a9b204",
+            "score": -2,
+            "text": "I’ll need time and support from friends and family to recover from burnout. The next goal may be less ambitious",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Failure management",
+        "text": "You receive an evaluation with numerous areas for improvement. Your actions?",
+        "answers": [
+          {
+            "id": "b9a7ce3b-3b00-4724-8929-480966abf802",
+            "score": 2,
+            "text": "I’ll agree on measurable improvement criteria, work on the feedback, and use future evaluations as a boost for career growth",
+            "parameters": []
+          },
+          {
+            "id": "8742fe2a-fadf-475e-8d6c-9e10b6f82aa4",
+            "score": 1,
+            "text": "I’ll listen to everything said, take the feedback into account, and avoid negotiations during the evaluation session",
+            "parameters": []
+          },
+          {
+            "id": "d41965b8-2b3f-46a6-8714-8fc739c9f622",
+            "score": -1,
+            "text": "I’ll try to reduce the negativity and shift the focus to work conditions or team challenges",
+            "parameters": []
+          },
+          {
+            "id": "9d2fd9c2-1db3-4785-b0f5-73e2ad57718f",
+            "score": -2,
+            "text": "Such feedback often means they might be already looking for a replacement. I’ll check job openings",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Failure management",
+        "text": "In a group chat, someone keeps interrupting or talking over you",
+        "answers": [
+          {
+            "id": "3a1b5809-0e82-4b45-b2bc-6ad21aa575fb",
+            "score": 2,
+            "text": "People rarely realize how they come across. I won’t pay much attention, If it bothers me, I might make a joke or ask to stop politely",
+            "parameters": []
+          },
+          {
+            "id": "3ef549fa-50c3-4dfc-a17f-439b52ca74d0",
+            "score": 1,
+            "text": "Rudeness might annoy me, but I’ll try to handle it calmly and discreetly",
+            "parameters": []
+          },
+          {
+            "id": "7e6a43a5-8f1f-4e0d-acec-525af521439b",
+            "score": -1,
+            "text": "This person clearly has some issue with me. I’ll firmly address it if it happens again",
+            "parameters": []
+          },
+          {
+            "id": "506f109e-0e96-4b61-bec1-4a05719cc0d5",
+            "score": -2,
+            "text": "It’s upsetting and confusing. I might not have the right words at the moment, but making a scene doesn't seem helpful. I’ll just ignore it",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Pride",
+        "text": "You’re invited to an event where someone openly mocks or disagrees with your views and beliefs",
+        "answers": [
+          {
+            "id": "95a211fd-a210-4c90-9f91-83725b0e2d8f",
+            "score": 2,
+            "text": "If I’m up for it, I might enjoy debating. The opponent might soon regret starting the argument",
+            "parameters": []
+          },
+          {
+            "id": "ea8db8ca-fe85-4f86-a056-bf034cb38065",
+            "score": 1,
+            "text": "I’ll counter just enough to show I’m firm in my position but won’t argue further. I’m not preaching my views",
+            "parameters": []
+          },
+          {
+            "id": "3f550a26-f644-4c95-8cbf-9b51bf79a367",
+            "score": -1,
+            "text": "I'm always assertive in defending my point of view, especially on important issues",
+            "parameters": []
+          },
+          {
+            "id": "79d1689c-b292-485a-b2b8-89d319fb7348",
+            "score": -2,
+            "text": "It’s hard to counter absurd claims clearly in sensitive topics. I know I'm right, but my response can be scattered and emotional, which can be frustrating",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Pride",
+        "text": "In an important team project, your suggestion faces sharp criticism from some members",
+        "answers": [
+          {
+            "id": "1e4a9df4-2cbf-4157-beff-962d85e37bf1",
+            "score": 2,
+            "text": "I’ll listen to suggestions for improving my proposal or good ideas. If I can benefit from others' input, I’ll use it",
+            "parameters": []
+          },
+          {
+            "id": "60aa5795-5ac4-4d27-a419-ea511f09d303",
+            "score": 1,
+            "text": "Decisions are made by the leader or voting. If I can't reach a compromise with opponents, I won’t argue, but I’ll make sure my position is as convincing as possible",
+            "parameters": []
+          },
+          {
+            "id": "b180dbc8-a551-4b3c-81b7-217df982da50",
+            "score": -1,
+            "text": "I'll point out the critics' weaknesses to undermine their objections and make them defensive",
+            "parameters": []
+          },
+          {
+            "id": "49238a58-3ff5-44cd-891e-c2a25ac6cc62",
+            "score": -2,
+            "text": "Those opposing an effective proposal likely have personal motives. My job is to present the idea; others can choose the best option",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Pride",
+        "text": "In an unfamiliar group, someone makes jokes or sarcastic comments about you",
+        "answers": [
+          {
+            "id": "8108768b-3e51-41b7-8c36-17bc66ec4294",
+            "score": 2,
+            "text": "If the joke is funny, I’ll laugh along and play along. If not, I’ll ignore it or try to make it funnier to avoid awkwardness",
+            "parameters": []
+          },
+          {
+            "id": "43458491-fb61-4eda-bf3f-deee78634dd6",
+            "score": 1,
+            "text": "I’ll use humor to counter the speaker and set boundaries subtly, keeping the conversation non-confrontational",
+            "parameters": []
+          },
+          {
+            "id": "4dcc978d-beeb-47b6-885d-3159c3b4650d",
+            "score": -1,
+            "text": "I don't like jokes at my expense, especially from strangers. I’ll make it clear that I'm not a suitable target",
+            "parameters": []
+          },
+          {
+            "id": "c03ceeb2-4933-4414-80f8-01c268c7d47c",
+            "score": -2,
+            "text": "My collection of \"how I should have responded years ago\" might grow. Unexpected jabs can catch me off guard and sometimes leave me at a loss for words",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "parameterName": "Pride",
+        "text": "You're on a first date, and the other person seems indifferent and uninterested",
+        "answers": [
+          {
+            "id": "cc2c9ea6-05fb-4b15-ae57-19bf97896d84",
+            "score": 2,
+            "text": "There can be various reasons, from personal issues to stress. I'll either ask directly to understand better or wait to see if the attitude changes",
+            "parameters": []
+          },
+          {
+            "id": "79bcc7a6-1a1e-43e3-ade8-c0111444823d",
+            "score": 1,
+            "text": "A date involves mutual engagement, even if there's no second meeting. I won't react negatively, but I'll likely mirror that attitude instinctively.",
+            "parameters": []
+          },
+          {
+            "id": "5232e84b-c757-4b3b-a6b3-c85d5bc44bc6",
+            "score": -1,
+            "text": "I have healthy self-esteem, so I don't tolerate indifference. I might hint at my perspective to encourage a change, but overall, I don’t see much point in continuing",
+            "parameters": []
+          },
+          {
+            "id": "db74554e-b751-4e18-a30e-e1070158faba",
+            "score": -2,
+            "text": "The person’s expectations might not match reality. I’ll assess myself and try to understand what in me or my behavior caused it",
+            "parameters": []
+          }
+        ]
+      }
+    ],
     "permissions": []
   },
   {

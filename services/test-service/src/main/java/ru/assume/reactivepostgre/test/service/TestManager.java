@@ -7,12 +7,14 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import ru.assume.reactivepostgre.test.mapper.TestMapper;
 import ru.assume.reactivepostgre.test.mapper.TestParameterMapper;
+import ru.assume.reactivepostgre.test.model.QuestionDomainManagement;
 import ru.assume.reactivepostgre.test.model.TestCard;
 import ru.assume.reactivepostgre.test.model.TestDomainManagement;
 import ru.assume.reactivepostgre.test.model.TestParameter;
 import ru.assume.reactivepostgre.test.persistence.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -21,6 +23,7 @@ public class TestManager {
 
     private final TestMapper testMapper;
     private final TestRepository testRepository;
+    private final QuestionRepository questionRepository;
     private final TestCardRepository testCardRepository;
     private final TestParameterMapper testParameterMapper;
     private final TestParameterRepository testParameterRepository;
@@ -37,7 +40,11 @@ public class TestManager {
 
                                     log.info("Mapped {} parameters for test {}", parameters.size(), savedTest.getId());
 
-                                    Mono<List<TestParameter>> processedParameters = testParameterRepository.saveAll(parameters)
+                                    Mono<List<TestParameterEntity>> savedParameters = testParameterRepository.saveAll(parameters)
+                                            .collectList();
+
+                                    Mono<List<TestParameter>> processedParameters = savedParameters
+                                            .flatMapMany(Flux::fromIterable)
                                             .flatMap(savedParam -> {
                                                 List<TestParameterValueEntity> parameterValues = test.getParameters().stream()
                                                         .filter(param -> param.getName().equals(savedParam.getName()))
@@ -73,11 +80,37 @@ public class TestManager {
                                             .collectList()
                                             .doOnNext(test::setCards);
 
+                                    Mono<List<QuestionEntity>> processedQuestions = savedParameters
+                                            .map(savedParamList -> {
+                                                return Optional.ofNullable(test.getQuestions()).orElse(List.of())
+                                                        .stream()
+                                                        .map(question -> testMapper.apiToQuestionEntity(
+                                                                question, savedTest.getId(),
+                                                                findParameterIdByName(savedParamList, question.getParameterName())))
+                                                        .toList();
+                                            })
+                                            .flatMapMany(questionRepository::saveAll)
+                                            .collectList();
+
+                                    Mono<List<QuestionDomainManagement>> mappedQuestions = processedQuestions
+                                            .map(savedQuestions -> savedQuestions.stream()
+                                                    .map(testMapper::questionEntityToApi)
+                                                    .toList())
+                                            .doOnNext(test::setQuestions);
+
                                     return processedParameters
                                             .then(processedCards)
+                                            .then(mappedQuestions)
                                             .then(Mono.just(test));
                                 })
                 );
     }
 
+    private String findParameterIdByName(List<TestParameterEntity> savedParameters, String parameterName) {
+        return savedParameters.stream()
+                .filter(param -> param.getName().equals(parameterName))
+                .findFirst()
+                .map(TestParameterEntity::getId)
+                .orElse(null);
+    }
 }

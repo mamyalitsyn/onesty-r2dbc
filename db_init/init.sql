@@ -91,3 +91,14 @@ CREATE TABLE "test-schema".test_card (
     CONSTRAINT test_card_pkey PRIMARY KEY (id),
     CONSTRAINT test_card_fkey FOREIGN KEY (test_id) REFERENCES "test-schema".test(id)
 );
+
+CREATE TABLE "test-schema".test_question (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    "text" varchar(4096) NULL,
+    test_id varchar(255) NULL,
+    parameter_id varchar(255) NULL,
+    "version" BIGINT DEFAULT 0,
+    CONSTRAINT test_question_pkey PRIMARY KEY (id),
+    CONSTRAINT test_question_param_fkey FOREIGN KEY (parameter_id) REFERENCES "test-schema".test_parameter(id),
+    CONSTRAINT test_question_test_fkey FOREIGN KEY (test_id) REFERENCES "test-schema".test(id)
+);

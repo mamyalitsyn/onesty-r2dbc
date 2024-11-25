@@ -17,4 +17,5 @@ public class TestDomainManagement {
     private Integer order;
     private List<TestParameter> parameters;
     private List<TestCard> cards;
+    private List<QuestionDomainManagement> questions;
 }
