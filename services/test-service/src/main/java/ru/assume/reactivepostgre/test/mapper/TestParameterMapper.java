@@ -4,8 +4,8 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.assume.reactivepostgre.test.model.TestParameter;
-import ru.assume.reactivepostgre.test.persistence.TestParameterEntity;
-import ru.assume.reactivepostgre.test.persistence.TestParameterValueEntity;
+import ru.assume.reactivepostgre.test.persistence.entity.TestParameterEntity;
+import ru.assume.reactivepostgre.test.persistence.entity.TestParameterValueEntity;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.ERROR)
 public interface TestParameterMapper {

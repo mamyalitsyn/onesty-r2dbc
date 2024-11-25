@@ -1,4 +1,4 @@
-package ru.assume.reactivepostgre.test.persistence;
+package ru.assume.reactivepostgre.test.persistence.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,15 +10,14 @@ import org.springframework.data.relational.core.mapping.Table;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table("test_parameter")
-public class TestParameterEntity {
+@Table("test_answer")
+public class AnswerEntity {
 
     @Id
     private String id;
     @Version
     private Long version;
-    private String name;
-    private String about;
-    private String testId;
+    private Integer score;
+    private String text;
+    private String questionId;
 }
-

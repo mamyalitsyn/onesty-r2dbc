@@ -19,7 +19,7 @@ public class TestController {
     private final TestManager manager;
 
     @PostMapping("/testsAdd")
-    Flux<TestDomainManagement> createTests(@RequestBody List<TestDomainManagement> tests) {
+    Flux<Void> createTests(@RequestBody List<TestDomainManagement> tests) {
         log.info("persisting {} new tests", tests.size());
         return manager.createTests(tests);
     }

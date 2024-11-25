@@ -1,4 +1,4 @@
-package ru.assume.reactivepostgre.test.persistence;
+package ru.assume.reactivepostgre.test.persistence.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

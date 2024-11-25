@@ -7,11 +7,9 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import ru.assume.reactivepostgre.test.mapper.TestMapper;
 import ru.assume.reactivepostgre.test.mapper.TestParameterMapper;
-import ru.assume.reactivepostgre.test.model.QuestionDomainManagement;
-import ru.assume.reactivepostgre.test.model.TestCard;
 import ru.assume.reactivepostgre.test.model.TestDomainManagement;
-import ru.assume.reactivepostgre.test.model.TestParameter;
 import ru.assume.reactivepostgre.test.persistence.*;
+import ru.assume.reactivepostgre.test.persistence.entity.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -23,13 +21,14 @@ public class TestManager {
 
     private final TestMapper testMapper;
     private final TestRepository testRepository;
+    private final AnswerRepository answerRepository;
     private final QuestionRepository questionRepository;
     private final TestCardRepository testCardRepository;
     private final TestParameterMapper testParameterMapper;
     private final TestParameterRepository testParameterRepository;
     private final TestParameterValueRepository testParameterValueRepository;
 
-    public Flux<TestDomainManagement> createTests(List<TestDomainManagement> tests) {
+    public Flux<Void> createTests(List<TestDomainManagement> tests) {
         return Flux.fromIterable(tests)
                 .flatMap(test ->
                         testRepository.save(testMapper.apiToEntity(test))
@@ -38,12 +37,10 @@ public class TestManager {
                                             .map(param -> testParameterMapper.apiToEntity(param, savedTest.getId()))
                                             .toList();
 
-                                    log.info("Mapped {} parameters for test {}", parameters.size(), savedTest.getId());
-
                                     Mono<List<TestParameterEntity>> savedParameters = testParameterRepository.saveAll(parameters)
                                             .collectList();
 
-                                    Mono<List<TestParameter>> processedParameters = savedParameters
+                                    Mono<Void> processedParameters = savedParameters
                                             .flatMapMany(Flux::fromIterable)
                                             .flatMap(savedParam -> {
                                                 List<TestParameterValueEntity> parameterValues = test.getParameters().stream()
@@ -52,59 +49,49 @@ public class TestManager {
                                                                 .map(value -> testParameterMapper.apiToValueEntity(value, savedParam.getId())))
                                                         .toList();
 
-                                                return testParameterValueRepository.saveAll(parameterValues)
-                                                        .thenMany(testParameterValueRepository.findByTestParameterId(savedParam.getId())
-                                                                .collectList()
-                                                                .map(savedValues -> {
-                                                                    TestParameter mappedParam = testParameterMapper.entityToApi(savedParam);
-                                                                    mappedParam.setValue(savedValues.stream()
-                                                                            .map(testParameterMapper::valueEntityToApi)
-                                                                            .toList());
-                                                                    return mappedParam;
-                                                                }));
+                                                return testParameterValueRepository.saveAll(parameterValues).then();
                                             })
-                                            .collectList()
-                                            .doOnNext(savedParams -> {
-                                                test.setId(savedTest.getId());
-                                                test.setParameters(savedParams);
-                                            });
+                                            .then();
 
                                     List<TestCardEntity> cards = test.getCards().stream()
                                             .map(card -> testMapper.apiToCardEntity(card, savedTest.getId()))
                                             .toList();
 
-                                    log.info("Mapped {} cards for test {}", cards.size(), savedTest.getId());
-
-                                    Mono<List<TestCard>> processedCards = testCardRepository.saveAll(cards)
-                                            .map(testMapper::cardEntityToApi)
-                                            .collectList()
-                                            .doOnNext(test::setCards);
+                                    Mono<Void> processedCards = testCardRepository.saveAll(cards).then();
 
                                     Mono<List<QuestionEntity>> processedQuestions = savedParameters
-                                            .map(savedParamList -> {
-                                                return Optional.ofNullable(test.getQuestions()).orElse(List.of())
-                                                        .stream()
-                                                        .map(question -> testMapper.apiToQuestionEntity(
-                                                                question, savedTest.getId(),
-                                                                findParameterIdByName(savedParamList, question.getParameterName())))
-                                                        .toList();
-                                            })
+                                            .map(savedParamList -> Optional.ofNullable(test.getQuestions()).orElse(List.of())
+                                                    .stream()
+                                                    .map(question -> testMapper.apiToQuestionEntity(
+                                                            question, savedTest.getId(),
+                                                            findParameterIdByName(savedParamList, question.getParameterName())))
+                                                    .toList())
                                             .flatMapMany(questionRepository::saveAll)
                                             .collectList();
 
-                                    Mono<List<QuestionDomainManagement>> mappedQuestions = processedQuestions
-                                            .map(savedQuestions -> savedQuestions.stream()
-                                                    .map(testMapper::questionEntityToApi)
-                                                    .toList())
-                                            .doOnNext(test::setQuestions);
+                                    Mono<Void> processedAnswers = processedQuestions
+                                            .flatMapMany(Flux::fromIterable)
+                                            .flatMap(savedQuestion -> {
+                                                List<AnswerEntity> answers = Optional.ofNullable(test.getQuestions()).orElse(List.of())
+                                                        .stream()
+                                                        .filter(q -> q.getText().equals(savedQuestion.getText()))
+                                                        .flatMap(q -> Optional.ofNullable(q.getAnswers()).orElse(List.of()).stream()
+                                                                .map(answer -> testMapper.apiToAnswerEntity(answer, savedQuestion.getId())))
+                                                        .toList();
+
+                                                return answerRepository.saveAll(answers).then();
+                                            })
+                                            .then();
 
                                     return processedParameters
                                             .then(processedCards)
-                                            .then(mappedQuestions)
-                                            .then(Mono.just(test));
+                                            .then(processedAnswers);
                                 })
-                );
+                )
+                .thenMany(Flux.empty());
     }
+
+
 
     private String findParameterIdByName(List<TestParameterEntity> savedParameters, String parameterName) {
         return savedParameters.stream()
