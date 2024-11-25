@@ -591,7 +591,118 @@
         ]
       }
     ],
-    "cards": [],
+    "cards": [
+      {
+        "back": "Your responses show that you’re deeply aware of social norms and strive for personal growth. While you may face occasional self-doubt, it reflects your commitment to improvement.\n\nEmbracing challenges and recognizing your progress are key to your development. Growth takes time, and feelings of inadequacy are part of the journey, not a measure of your potential. Acknowledge your progress, be kind to yourself, and keep believing in your ability to grow.",
+        "front": "",
+        "gimmy": "You seek freedom while staying self-aware. Even in moments of doubt, your inner strength drives your growth. **There are less than 7%** of people like you here in New York today.",
+        "imageUrl": "moonlightMuse",
+        "maxValue": -33,
+        "minValue": -40,
+        "cardName": "moonlight muse",
+        "opportunities": "• Managing self-criticism: balance self-reflection with self-compassion to lessen the impact of your inner critic\n\n• Fueling self-esteem: focus on your strengths and achievements to build a more stable, positive self-image\n\n• Embracing imperfection: view mistakes as part of growth and shift from self-criticism to improvement\n\n• Emotional balance: keep emotional balance during introspection to maintain a healthier self-perception\n\n• Setting boundaries: recognize and deflect toxic criticism to protect your self-worth and confidence",
+        "strengths": "• Intellectual curiosity: you have a strong desire to understand and interpret the world around you, leading to meaningful insights and personal growth\n\n• Drive for self-Improvement: you’re motivated to become the best version of yourself and strive for excellence\n\n• Analytical thinking: you process information critically, spot patterns, and make informed decisions\n\n• Emotional resilience: despite fluctuating self-esteem, you recover from challenges and learn from setbacks\n\n• Inner depth: your self-awareness helps you handle complex emotions and thoughts with maturity"
+      },
+      {
+        "back": "\"You cannot live in society and be free from society.\" Your responses suggest you relate to this, even if you desire more freedom. You strive to be your best, though your inner critic often remains unsatisfied. \n\nYour deep analysis and intellectual engagement foster growth and self-harmony. While this growth can be challenging and impact self-esteem, remember your true value is greater than you might realize.",
+        "front": "",
+        "gimmy": "You seek freedom while staying self-aware. Even in moments of doubt, your inner strength drives your growth. **There are less than 13%** of people like you here in New York today.",
+        "imageUrl": "dreamyDaisy",
+        "maxValue": -25,
+        "minValue": -32,
+        "cardName": "dreamy daisy",
+        "opportunities": "• Celebrating achievements: recognize and reward even small successes to boost confidence\n\n• Practicing self-compassion: be kind to yourself during doubts and see mistakes as learning opportunities\n\n• Challenging negative thoughts: reframe negative beliefs with positive affirmations and evidence of your strengths\n\n• Focus on growth: concentrate on your personal journey and development, not on comparing yourself to others\n\n• Staying present: focus on today's actions and improvements, rather than past mistakes or future worries",
+        "strengths": "• Self-Awareness: your tendency to reflect deeply on your experiences indicates strong self-awareness and a desire for growth\n\n• Resilience: despite challenges, your willingness to confront difficulties shows resilience and determination\n\n• Analytical thinking: you process information critically, spot patterns, and make informed decisions\n\n• Inner depth: your self-awareness helps you handle complex emotions and thoughts with maturity\n\n• Self-motivation: your introspective nature helps you stay motivated and driven, even in the face of setbacks."
+      },
+      {
+        "back": "Your responses show some sensitivity to external evaluations, which can affect your self-esteem. This sensitivity reveals strong empathy and deep self-analysis, key for personal growth. When managed well, it can boost self-improvement and unlock your potential.\n\nWhile observing others can be insightful, focus on your own journey rather than comparing yourself to others. Embrace your unique path and set goals based on your personal aspirations.",
+        "front": "",
+        "gimmy": "You have a rare depth of self-awareness, effortlessly balancing introspection with growth. Your ability to turn challenges into progress is superb. **There are less than 10% of people** like you here in New York today.",
+        "imageUrl": "quietBeauty",
+        "maxValue": -17,
+        "minValue": -24,
+        "cardName": "quiet beauty",
+        "opportunities": "• Focus on achievements: a balanced perspective helps reduce self-criticism\n\n• Internal confidence: developing self-confidence from within, rather than relying on external praise or criticism can enhance resilience\n\n• Personal goals: setting goals based on personal aspirations, rather than comparing with others, aligns motivation with individual progress\n\n• Embracing change: openness to new experiences and perspectives can boost self-awareness and growth\n\n• Staying present: focusing on today’s actions and improvements helps build strong momentum",
+        "strengths": "• Intellectual curiosity: you have a strong desire to understand and interpret the world around you, leading to meaningful insights and personal growth\n\n• Self-reflection: deep self-reflection helps you understand your motivations and continuously improve\n\n• Empathy: your sensitivity reflects a deep sense of empathy, helping you build strong and genuine relationships\n\n• Self-analysis: your ability to engage in profound self-analysis is a valuable asset for personal growth\n\n• Adaptability: you handle changes effectively and adjust your approach to navigate challenges smoothly"
+      },
+      {
+        "back": "Your sensitivity to others highlights your empathy and deep self-reflection, which are valuable for personal growth. It's a double-edged sword, though. It can either drive self-improvement and unlock your potential or lead to fluctuating confidence and harsh self-criticism, depending on how you manage it. \n\nWhile observing others can be insightful, focus on your own journey rather than comparing yourself to others. Embrace your unique path and set goals based on your personal aspirations.",
+        "front": "",
+        "gimmy": "You have a rare depth of self-awareness, effortlessly balancing introspection with growth. Your ability to turn challenges into progress is superb. **There are less than 7%** of people like you here in New York today.",
+        "imageUrl": "peacefulHeart",
+        "maxValue": -9,
+        "minValue": -16,
+        "cardName": "peaceful heart",
+        "opportunities": "• Practice self-support: be kind to yourself during setbacks, they’re part of the process\n\n• Shifting perspective: see challenges as opportunities for growth and embrace them\n\n• Celebrate wins: shift focus from mistakes to small victories, boosting confidence and motivation\n\n• Staying present: concentrating on today's actions builds strong momentum\n\n• Avoid comparisons: stay focused on your personal journey and progress, recognizing that everyone's path is different",
+        "strengths": "• Adaptability: you effectively manage changes and adjust to navigate challenges smoothly\n\n• Intellectual curiosity: your active mind drives you to learn and solve problems creatively\n\n• Resilience to feedback: you use feedback constructively to support your growth and development\n\n• Reflection on mistakes: you tend to reflect on your mistakes, which can help you learn and grow from them\n\n• Emotional insight: your awareness helps you handle relationships with empathy and understanding"
+      },
+      {
+        "back": "You’re aware of your strengths but may have moments of doubt, influenced by how you think others view you. This is normal and common. The key is managing how external opinions impact your self-esteem. \n\nRemember, self-esteem doesn’t define you fully. \nThere’s no “objective reality” in evaluations — judgments are shaped by personal values and biases. It’s perfectly reasonable to build self-esteem in a way that boosts your comfort and confidence.",
+        "front": "",
+        "gimmy": "You balance introspection with growth and resilience, using your self-awareness to turn challenges into gradual progress. **There are less than 9%** of people like you here in New York today.",
+        "imageUrl": "sereneGoddes",
+        "maxValue": -1,
+        "minValue": -8,
+        "cardName": "serene goddes",
+        "opportunities": "• Embrace vulnerability: practice opening up to others, enhancing trust and connection\n\n• Expand comfort zone: challenge yourself daily with something that makes you anxious\n\n• Build self-compassion: be kind to yourself during setbacks and challenges\n\n• Be open to failure: accepting the worst-case scenario can increase your freedom and efficiency in getting positive result\n\n• Focus on progress, not perfection: appreciate growth rather than striving for flawlessness",
+        "strengths": "• Emotional resilience: your ability to bounce back from setbacks helps you overcome challenges\n\n• Self-reflection: deep self-analysis fuels your personal development and self-awareness\n\n• Acceptance: you embrace your strengths and weaknesses, fostering a positive self-image\n\n• Balanced self-view: you manage external influences effectively, maintaining a stable sense of self\n\n• Growth focus: you are dedicated to personal growth, using experiences and feedback to improve"
+      },
+      {
+        "back": "You clearly understand your strengths but may sometimes doubt yourself based on how you think others see you. This is common for many people. The key is deciding how much weight you give to external opinions. \n\nOthers may see you differently, shaped by their own perceptions. There’s no “objective reality” in evaluations — everyone’s views are influenced by different values and perspectives. It’s okay to build self-esteem in a way that brings you comfort, harmony, and confidence.",
+        "front": "",
+        "gimmy": "You approach challenges with a balanced outlook, using feedback and new experiences to enhance your personal growth and comfort. **There are less than 9%** of people like you here in New York today.",
+        "imageUrl": "daringDiva",
+        "maxValue": 7,
+        "minValue": 0,
+        "cardName": "daring diva",
+        "opportunities": "• Cultivate gratitude: focus on positive aspects of life to maintain a balanced perspective\n\n• Reframe setbacks: view challenges as opportunities for growth\n\n• Engage in new experiences: try new things to expand your comfort zone\n\n• Set realistic goals: achieving targets on a regular basis gives you strong sense of progress and neural boost\n\n• Improve self-awareness: reflect more on strengths and weaknesses for better personal insight",
+        "strengths": "• Resilience: you recover well from challenges, balancing setbacks with courage\n\n• Open-mindedness: you’re receptive to new ideas and feedback, supporting your growth\n\n• Balanced view: you maintain a balanced perspective on your abilities, recognizing both strengths and areas for improvement\n\n• Independent self-perception: you work on forming your self-view based on personal values\n\n• Overcoming inner critic: you manage and counteract negative self-talk, maintaining a balanced and positive outlook"
+      },
+      {
+        "back": "Your self-esteem and independence from others are above average. While external factors can still affect your mood, you respond well to positive feedback like compliments and achievements. \n\nYou show some sensitivity to negative feedback and mistakes, but usually maintain balance, trusting your own judgment. \n\nWhether your confidence developed over time or early on, it’s a strong asset. You likely know your areas for growth, so progress will come naturally.",
+        "front": "",
+        "gimmy": "You excel with strong self-esteem and independence, leveraging positive feedback to fuel progress and managing possible setbacks with grace. **There are less than 12%** of people like you here in New York today.",
+        "imageUrl": "fieryVixen",
+        "maxValue": 15,
+        "minValue": 8,
+        "cardName": "fiery vixen",
+        "opportunities": "• Embrace criticism: use negative feedback to grow, not to harm your self-perception\n\n• Define a roadmap: identify areas for improvement to guide your growth\n\n• Set realistic goals: achieving targets on a regular basis gives you strong sense of progress and neural boost\n\n• Focus on progress, not perfection: appreciate growth instead of aiming for perfection\n\n• Staying present: concentrating on today's actions builds strong momentum",
+        "strengths": "• High confidence: you have strong self-esteem and don’t depend on others' opinions about you\n\n• Positive response: you thrive on positive feedback, using it to boost your motivation while effectively disregarding toxic opinions\n\n• Balanced perspective: you maintain a steady view even with negative feedback or mistakes\n\n• Independent judgment: you trust your own judgment in uncertain situations, helping you handle challenges well\n\n• Self-awareness: you clearly understand your strengths and areas for growth, guiding your development"
+      },
+      {
+        "back": "Your self-esteem and independence from others' opinions are well above average. Positive feedback like compliments, achievements, and high evaluations tend to influence your mood more than anything negative. Though somewhat sensitive to criticism, you trust your own judgment over your inner critic. Whether built over time or from childhood, this confidence is a major asset. \n\nNot everyone shares this level of self-assurance, so it's important to be mindful of potential challenges in empathy and communication.",
+        "front": "",
+        "gimmy": "You use your high self-esteem and openness to feedback for growth, excelling in relationships and leadership with a truly graceful approach. **There are less than 7% of people** like you here in New York today.",
+        "imageUrl": "braveHeart",
+        "maxValue": 23,
+        "minValue": 16,
+        "cardName": "brave heart",
+        "opportunities": "• Expand understanding: explore how others’ self-esteem levels impact their perceptions and reactions\n\n• Conflict resolution: address deeper emotional issues to resolve conflicts even more effectively\n\n• Careful feedback: help others grow without hurting their confidence\n\n• Focus on progress, not perfection: appreciate growth instead of aiming for perfection\n\n• Support others in challenges: offer support and guidance to those struggling with self-doubt",
+        "strengths": "• High self-esteem: you rely on your own self-worth rather than seeking validation from others\n\n• Balanced perspective: you handle feedback well, using it for growth without letting it impact your self-worth\n\n• Decisive judgment: you trust your own judgment over inner criticism when faced with uncertainty\n\n• Adaptability: you adjust well to changes and new situations, maintaining composure and focus\n\n• Intuitive growth awareness: you naturally understand areas for improvement, supporting ongoing personal development"
+      },
+      {
+        "back": "Your responses show high self-esteem and independence from others' opinions. Both criticism and praise have little impact on your confidence—you don’t take criticism to heart, and while approval is nice, it’s not your main goal. You're open to growth and use feedback for self-improvement. \n\nPeople with this level of self-esteem often excel in relationships and leadership. Your resilience and ability to connect with others help resolve conflicts and maintain team harmony. This unique strength sets you apart in any setting.",
+        "front": "",
+        "gimmy": "Your deep-rooted self-esteem and compassionate heart build a space of encouragement and harmony, where others thrive and feel truly valued. **There are less than 9%** of people like you here in New York today.",
+        "imageUrl": "daringBlossom",
+        "maxValue": 31,
+        "minValue": 24,
+        "cardName": "daring blossom",
+        "opportunities": "• Understanding perspectives: recognize that people have different self-views and situations. This smooths your communication\n\n• Addressing emotional roots: conflicts often arise from deeper self-esteem issues. Identifying these can lead to better resolutions\n\n• Careful feedback: help others grow without hurting their confidence\n\n• Support others in challenges: offer support and guidance to those struggling with self-doubt\n\n• Practice gratitude: regularly appreciate the positive aspects of your life and achievements",
+        "strengths": "• Resilient confidence: your high self-esteem keeps you steady during challenges, focusing on your own values rather than others' opinions\n\n• Balanced perspective: you handle feedback well, using it for growth without letting it impact your self-worth\n\n• Effective relationships: your confidence helps you build deep relationships and resolve conflicts effectively when needed\n\n• Self-motivation: you’re proactive in personal development, using feedback to drive continuous improvement\n\n• Calm under pressure: your confidence helps you manage challenges and maintain a positive environment"
+      },
+      {
+        "back": "Your responses reflect a deeply rooted and balanced self-esteem. Criticism, whether positive or negative, doesn’t shake your confidence. You focus on your values and goals, viewing growth as a personal journey, not something defined by others.\n\nWith self-esteem like yours, you’re a born or self-made leader. Your calmness and genuine connections help you resolve conflicts and create a positive, harmonious environment that others naturally gravitate towards.",
+        "front": "",
+        "gimmy": "Your unwavering self-worth and empathetic nature build a sanctuary of positivity, making everyone feel supported and truly valued. **There are less than 7%** of people like you here in New York today.",
+        "imageUrl": "charismaQueen",
+        "maxValue": 40,
+        "minValue": 32,
+        "cardName": "charisma queen",
+        "opportunities": "• Bridge confidence gaps: be aware of confidence gaps others may have and consider them in your interactions\n\n• Foster inclusivity: use your confidence to help others feel valued through gestures of recognition and empathy\n\n• Mentor others: apply your experience to guide and support others in building their own self-confidence\n\n• Promote openness: encourage honest and open conversations, fostering trust and clarity in relationships\n\n• Build positive environments: create and nurture environments that are supportive, encouraging, and free from negativity",
+        "strengths": "• Steadfast self-esteem: your strong self-esteem remains steady despite external opinions. You handle difficulties with greater resilience and capability than nearly everyone\n\n• Resilient confidence: you handle criticism gracefully and use it constructively\n\n• Effective relationships: your perfect balance helps you build and maintain meaningful relationships\n\n• Natural leadership: your self-assurance and emotional stability make you a confident leader\n\n• Growth-oriented mindset: you see personal development as a continuous journey driven by internal motivation rather than external validation"
+      }
+    ],
     "questions": [],
     "permissions": []
   },
@@ -717,7 +828,118 @@
         ]
       }
     ],
-    "cards": [],
+    "cards": [
+      {
+        "back": "Your responses show that you’re deeply aware of social norms and strive for personal growth. While you may face occasional self-doubt, it reflects your commitment to improvement.\n\nEmbracing challenges and recognizing your progress are key to your development. Growth takes time, and feelings of inadequacy are part of the journey, not a measure of your potential. Acknowledge your progress, be kind to yourself, and keep believing in your ability to grow.",
+        "front": "",
+        "gimmy": "You seek freedom while staying self-aware. Even in moments of doubt, your inner strength drives your growth. **There are less than 7%** of people like you here in New York today.",
+        "imageUrl": "moonlightMuse",
+        "maxValue": -33,
+        "minValue": -40,
+        "cardName": "moonlight muse",
+        "opportunities": "• Managing self-criticism: balance self-reflection with self-compassion to lessen the impact of your inner critic\n\n• Fueling self-esteem: focus on your strengths and achievements to build a more stable, positive self-image\n\n• Embracing imperfection: view mistakes as part of growth and shift from self-criticism to improvement\n\n• Emotional balance: keep emotional balance during introspection to maintain a healthier self-perception\n\n• Setting boundaries: recognize and deflect toxic criticism to protect your self-worth and confidence",
+        "strengths": "• Intellectual curiosity: you have a strong desire to understand and interpret the world around you, leading to meaningful insights and personal growth\n\n• Drive for self-Improvement: you’re motivated to become the best version of yourself and strive for excellence\n\n• Analytical thinking: you process information critically, spot patterns, and make informed decisions\n\n• Emotional resilience: despite fluctuating self-esteem, you recover from challenges and learn from setbacks\n\n• Inner depth: your self-awareness helps you handle complex emotions and thoughts with maturity"
+      },
+      {
+        "back": "\"You cannot live in society and be free from society.\" Your responses suggest you relate to this, even if you desire more freedom. You strive to be your best, though your inner critic often remains unsatisfied. \n\nYour deep analysis and intellectual engagement foster growth and self-harmony. While this growth can be challenging and impact self-esteem, remember your true value is greater than you might realize.",
+        "front": "",
+        "gimmy": "You seek freedom while staying self-aware. Even in moments of doubt, your inner strength drives your growth. **There are less than 13%** of people like you here in New York today.",
+        "imageUrl": "dreamyDaisy",
+        "maxValue": -25,
+        "minValue": -32,
+        "cardName": "dreamy daisy",
+        "opportunities": "• Celebrating achievements: recognize and reward even small successes to boost confidence\n\n• Practicing self-compassion: be kind to yourself during doubts and see mistakes as learning opportunities\n\n• Challenging negative thoughts: reframe negative beliefs with positive affirmations and evidence of your strengths\n\n• Focus on growth: concentrate on your personal journey and development, not on comparing yourself to others\n\n• Staying present: focus on today's actions and improvements, rather than past mistakes or future worries",
+        "strengths": "• Self-Awareness: your tendency to reflect deeply on your experiences indicates strong self-awareness and a desire for growth\n\n• Resilience: despite challenges, your willingness to confront difficulties shows resilience and determination\n\n• Analytical thinking: you process information critically, spot patterns, and make informed decisions\n\n• Inner depth: your self-awareness helps you handle complex emotions and thoughts with maturity\n\n• Self-motivation: your introspective nature helps you stay motivated and driven, even in the face of setbacks."
+      },
+      {
+        "back": "Your responses show some sensitivity to external evaluations, which can affect your self-esteem. This sensitivity reveals strong empathy and deep self-analysis, key for personal growth. When managed well, it can boost self-improvement and unlock your potential.\n\nWhile observing others can be insightful, focus on your own journey rather than comparing yourself to others. Embrace your unique path and set goals based on your personal aspirations.",
+        "front": "",
+        "gimmy": "You have a rare depth of self-awareness, effortlessly balancing introspection with growth. Your ability to turn challenges into progress is superb. **There are less than 10% of people** like you here in New York today.",
+        "imageUrl": "quietBeauty",
+        "maxValue": -17,
+        "minValue": -24,
+        "cardName": "quiet beauty",
+        "opportunities": "• Focus on achievements: a balanced perspective helps reduce self-criticism\n\n• Internal confidence: developing self-confidence from within, rather than relying on external praise or criticism can enhance resilience\n\n• Personal goals: setting goals based on personal aspirations, rather than comparing with others, aligns motivation with individual progress\n\n• Embracing change: openness to new experiences and perspectives can boost self-awareness and growth\n\n• Staying present: focusing on today’s actions and improvements helps build strong momentum",
+        "strengths": "• Intellectual curiosity: you have a strong desire to understand and interpret the world around you, leading to meaningful insights and personal growth\n\n• Self-reflection: deep self-reflection helps you understand your motivations and continuously improve\n\n• Empathy: your sensitivity reflects a deep sense of empathy, helping you build strong and genuine relationships\n\n• Self-analysis: your ability to engage in profound self-analysis is a valuable asset for personal growth\n\n• Adaptability: you handle changes effectively and adjust your approach to navigate challenges smoothly"
+      },
+      {
+        "back": "Your sensitivity to others highlights your empathy and deep self-reflection, which are valuable for personal growth. It's a double-edged sword, though. It can either drive self-improvement and unlock your potential or lead to fluctuating confidence and harsh self-criticism, depending on how you manage it. \n\nWhile observing others can be insightful, focus on your own journey rather than comparing yourself to others. Embrace your unique path and set goals based on your personal aspirations.",
+        "front": "",
+        "gimmy": "You have a rare depth of self-awareness, effortlessly balancing introspection with growth. Your ability to turn challenges into progress is superb. **There are less than 7%** of people like you here in New York today.",
+        "imageUrl": "peacefulHeart",
+        "maxValue": -9,
+        "minValue": -16,
+        "cardName": "peaceful heart",
+        "opportunities": "• Practice self-support: be kind to yourself during setbacks, they’re part of the process\n\n• Shifting perspective: see challenges as opportunities for growth and embrace them\n\n• Celebrate wins: shift focus from mistakes to small victories, boosting confidence and motivation\n\n• Staying present: concentrating on today's actions builds strong momentum\n\n• Avoid comparisons: stay focused on your personal journey and progress, recognizing that everyone's path is different",
+        "strengths": "• Adaptability: you effectively manage changes and adjust to navigate challenges smoothly\n\n• Intellectual curiosity: your active mind drives you to learn and solve problems creatively\n\n• Resilience to feedback: you use feedback constructively to support your growth and development\n\n• Reflection on mistakes: you tend to reflect on your mistakes, which can help you learn and grow from them\n\n• Emotional insight: your awareness helps you handle relationships with empathy and understanding"
+      },
+      {
+        "back": "You’re aware of your strengths but may have moments of doubt, influenced by how you think others view you. This is normal and common. The key is managing how external opinions impact your self-esteem. \n\nRemember, self-esteem doesn’t define you fully. \nThere’s no “objective reality” in evaluations — judgments are shaped by personal values and biases. It’s perfectly reasonable to build self-esteem in a way that boosts your comfort and confidence.",
+        "front": "",
+        "gimmy": "You balance introspection with growth and resilience, using your self-awareness to turn challenges into gradual progress. **There are less than 9%** of people like you here in New York today.",
+        "imageUrl": "sereneGoddes",
+        "maxValue": -1,
+        "minValue": -8,
+        "cardName": "serene goddes",
+        "opportunities": "• Embrace vulnerability: practice opening up to others, enhancing trust and connection\n\n• Expand comfort zone: challenge yourself daily with something that makes you anxious\n\n• Build self-compassion: be kind to yourself during setbacks and challenges\n\n• Be open to failure: accepting the worst-case scenario can increase your freedom and efficiency in getting positive result\n\n• Focus on progress, not perfection: appreciate growth rather than striving for flawlessness",
+        "strengths": "• Emotional resilience: your ability to bounce back from setbacks helps you overcome challenges\n\n• Self-reflection: deep self-analysis fuels your personal development and self-awareness\n\n• Acceptance: you embrace your strengths and weaknesses, fostering a positive self-image\n\n• Balanced self-view: you manage external influences effectively, maintaining a stable sense of self\n\n• Growth focus: you are dedicated to personal growth, using experiences and feedback to improve"
+      },
+      {
+        "back": "You clearly understand your strengths but may sometimes doubt yourself based on how you think others see you. This is common for many people. The key is deciding how much weight you give to external opinions. \n\nOthers may see you differently, shaped by their own perceptions. There’s no “objective reality” in evaluations — everyone’s views are influenced by different values and perspectives. It’s okay to build self-esteem in a way that brings you comfort, harmony, and confidence.",
+        "front": "",
+        "gimmy": "You approach challenges with a balanced outlook, using feedback and new experiences to enhance your personal growth and comfort. **There are less than 9%** of people like you here in New York today.",
+        "imageUrl": "daringDiva",
+        "maxValue": 7,
+        "minValue": 0,
+        "cardName": "daring diva",
+        "opportunities": "• Cultivate gratitude: focus on positive aspects of life to maintain a balanced perspective\n\n• Reframe setbacks: view challenges as opportunities for growth\n\n• Engage in new experiences: try new things to expand your comfort zone\n\n• Set realistic goals: achieving targets on a regular basis gives you strong sense of progress and neural boost\n\n• Improve self-awareness: reflect more on strengths and weaknesses for better personal insight",
+        "strengths": "• Resilience: you recover well from challenges, balancing setbacks with courage\n\n• Open-mindedness: you’re receptive to new ideas and feedback, supporting your growth\n\n• Balanced view: you maintain a balanced perspective on your abilities, recognizing both strengths and areas for improvement\n\n• Independent self-perception: you work on forming your self-view based on personal values\n\n• Overcoming inner critic: you manage and counteract negative self-talk, maintaining a balanced and positive outlook"
+      },
+      {
+        "back": "Your self-esteem and independence from others are above average. While external factors can still affect your mood, you respond well to positive feedback like compliments and achievements. \n\nYou show some sensitivity to negative feedback and mistakes, but usually maintain balance, trusting your own judgment. \n\nWhether your confidence developed over time or early on, it’s a strong asset. You likely know your areas for growth, so progress will come naturally.",
+        "front": "",
+        "gimmy": "You excel with strong self-esteem and independence, leveraging positive feedback to fuel progress and managing possible setbacks with grace. **There are less than 12%** of people like you here in New York today.",
+        "imageUrl": "fieryVixen",
+        "maxValue": 15,
+        "minValue": 8,
+        "cardName": "fiery vixen",
+        "opportunities": "• Embrace criticism: use negative feedback to grow, not to harm your self-perception\n\n• Define a roadmap: identify areas for improvement to guide your growth\n\n• Set realistic goals: achieving targets on a regular basis gives you strong sense of progress and neural boost\n\n• Focus on progress, not perfection: appreciate growth instead of aiming for perfection\n\n• Staying present: concentrating on today's actions builds strong momentum",
+        "strengths": "• High confidence: you have strong self-esteem and don’t depend on others' opinions about you\n\n• Positive response: you thrive on positive feedback, using it to boost your motivation while effectively disregarding toxic opinions\n\n• Balanced perspective: you maintain a steady view even with negative feedback or mistakes\n\n• Independent judgment: you trust your own judgment in uncertain situations, helping you handle challenges well\n\n• Self-awareness: you clearly understand your strengths and areas for growth, guiding your development"
+      },
+      {
+        "back": "Your self-esteem and independence from others' opinions are well above average. Positive feedback like compliments, achievements, and high evaluations tend to influence your mood more than anything negative. Though somewhat sensitive to criticism, you trust your own judgment over your inner critic. Whether built over time or from childhood, this confidence is a major asset. \n\nNot everyone shares this level of self-assurance, so it's important to be mindful of potential challenges in empathy and communication.",
+        "front": "",
+        "gimmy": "You use your high self-esteem and openness to feedback for growth, excelling in relationships and leadership with a truly graceful approach. **There are less than 7% of people** like you here in New York today.",
+        "imageUrl": "braveHeart",
+        "maxValue": 23,
+        "minValue": 16,
+        "cardName": "brave heart",
+        "opportunities": "• Expand understanding: explore how others’ self-esteem levels impact their perceptions and reactions\n\n• Conflict resolution: address deeper emotional issues to resolve conflicts even more effectively\n\n• Careful feedback: help others grow without hurting their confidence\n\n• Focus on progress, not perfection: appreciate growth instead of aiming for perfection\n\n• Support others in challenges: offer support and guidance to those struggling with self-doubt",
+        "strengths": "• High self-esteem: you rely on your own self-worth rather than seeking validation from others\n\n• Balanced perspective: you handle feedback well, using it for growth without letting it impact your self-worth\n\n• Decisive judgment: you trust your own judgment over inner criticism when faced with uncertainty\n\n• Adaptability: you adjust well to changes and new situations, maintaining composure and focus\n\n• Intuitive growth awareness: you naturally understand areas for improvement, supporting ongoing personal development"
+      },
+      {
+        "back": "Your responses show high self-esteem and independence from others' opinions. Both criticism and praise have little impact on your confidence—you don’t take criticism to heart, and while approval is nice, it’s not your main goal. You're open to growth and use feedback for self-improvement. \n\nPeople with this level of self-esteem often excel in relationships and leadership. Your resilience and ability to connect with others help resolve conflicts and maintain team harmony. This unique strength sets you apart in any setting.",
+        "front": "",
+        "gimmy": "Your deep-rooted self-esteem and compassionate heart build a space of encouragement and harmony, where others thrive and feel truly valued. **There are less than 9%** of people like you here in New York today.",
+        "imageUrl": "daringBlossom",
+        "maxValue": 31,
+        "minValue": 24,
+        "cardName": "daring blossom",
+        "opportunities": "• Understanding perspectives: recognize that people have different self-views and situations. This smooths your communication\n\n• Addressing emotional roots: conflicts often arise from deeper self-esteem issues. Identifying these can lead to better resolutions\n\n• Careful feedback: help others grow without hurting their confidence\n\n• Support others in challenges: offer support and guidance to those struggling with self-doubt\n\n• Practice gratitude: regularly appreciate the positive aspects of your life and achievements",
+        "strengths": "• Resilient confidence: your high self-esteem keeps you steady during challenges, focusing on your own values rather than others' opinions\n\n• Balanced perspective: you handle feedback well, using it for growth without letting it impact your self-worth\n\n• Effective relationships: your confidence helps you build deep relationships and resolve conflicts effectively when needed\n\n• Self-motivation: you’re proactive in personal development, using feedback to drive continuous improvement\n\n• Calm under pressure: your confidence helps you manage challenges and maintain a positive environment"
+      },
+      {
+        "back": "Your responses reflect a deeply rooted and balanced self-esteem. Criticism, whether positive or negative, doesn’t shake your confidence. You focus on your values and goals, viewing growth as a personal journey, not something defined by others.\n\nWith self-esteem like yours, you’re a born or self-made leader. Your calmness and genuine connections help you resolve conflicts and create a positive, harmonious environment that others naturally gravitate towards.",
+        "front": "",
+        "gimmy": "Your unwavering self-worth and empathetic nature build a sanctuary of positivity, making everyone feel supported and truly valued. **There are less than 7%** of people like you here in New York today.",
+        "imageUrl": "charismaQueen",
+        "maxValue": 40,
+        "minValue": 32,
+        "cardName": "charisma queen",
+        "opportunities": "• Bridge confidence gaps: be aware of confidence gaps others may have and consider them in your interactions\n\n• Foster inclusivity: use your confidence to help others feel valued through gestures of recognition and empathy\n\n• Mentor others: apply your experience to guide and support others in building their own self-confidence\n\n• Promote openness: encourage honest and open conversations, fostering trust and clarity in relationships\n\n• Build positive environments: create and nurture environments that are supportive, encouraging, and free from negativity",
+        "strengths": "• Steadfast self-esteem: your strong self-esteem remains steady despite external opinions. You handle difficulties with greater resilience and capability than nearly everyone\n\n• Resilient confidence: you handle criticism gracefully and use it constructively\n\n• Effective relationships: your perfect balance helps you build and maintain meaningful relationships\n\n• Natural leadership: your self-assurance and emotional stability make you a confident leader\n\n• Growth-oriented mindset: you see personal development as a continuous journey driven by internal motivation rather than external validation"
+      }
+    ],
     "questions": [],
     "permissions": []
   },

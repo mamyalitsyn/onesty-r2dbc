@@ -4,8 +4,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import ru.assume.reactivepostgre.test.mapper.TestMapper;
 import ru.assume.reactivepostgre.test.mapper.TestParameterMapper;
+import ru.assume.reactivepostgre.test.model.TestCard;
 import ru.assume.reactivepostgre.test.model.TestDomainManagement;
 import ru.assume.reactivepostgre.test.model.TestParameter;
 import ru.assume.reactivepostgre.test.persistence.*;
@@ -19,6 +21,7 @@ public class TestManager {
 
     private final TestMapper testMapper;
     private final TestRepository testRepository;
+    private final TestCardRepository testCardRepository;
     private final TestParameterMapper testParameterMapper;
     private final TestParameterRepository testParameterRepository;
     private final TestParameterValueRepository testParameterValueRepository;
@@ -34,7 +37,7 @@ public class TestManager {
 
                                     log.info("Mapped {} parameters for test {}", parameters.size(), savedTest.getId());
 
-                                    return testParameterRepository.saveAll(parameters)
+                                    Mono<List<TestParameter>> processedParameters = testParameterRepository.saveAll(parameters)
                                             .flatMap(savedParam -> {
                                                 List<TestParameterValueEntity> parameterValues = test.getParameters().stream()
                                                         .filter(param -> param.getName().equals(savedParam.getName()))
@@ -54,12 +57,27 @@ public class TestManager {
                                                                 }));
                                             })
                                             .collectList()
-                                            .map(savedParams -> {
+                                            .doOnNext(savedParams -> {
                                                 test.setId(savedTest.getId());
                                                 test.setParameters(savedParams);
-                                                return test;
                                             });
+
+                                    List<TestCardEntity> cards = test.getCards().stream()
+                                            .map(card -> testMapper.apiToCardEntity(card, savedTest.getId()))
+                                            .toList();
+
+                                    log.info("Mapped {} cards for test {}", cards.size(), savedTest.getId());
+
+                                    Mono<List<TestCard>> processedCards = testCardRepository.saveAll(cards)
+                                            .map(testMapper::cardEntityToApi)
+                                            .collectList()
+                                            .doOnNext(test::setCards);
+
+                                    return processedParameters
+                                            .then(processedCards)
+                                            .then(Mono.just(test));
                                 })
                 );
     }
+
 }

@@ -74,3 +74,20 @@ CREATE TABLE "test-schema".test_parameter_value (
     CONSTRAINT test_param_value_pkey PRIMARY KEY (id),
     CONSTRAINT test_param_value_fkey FOREIGN KEY (test_parameter_id) REFERENCES "test-schema".test_parameter(id)
 );
+
+CREATE TABLE "test-schema".test_card (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    back varchar(4096) NULL,
+    front varchar(4096) NULL,
+    gimmy varchar(1024) NULL,
+    image_url varchar(255) NULL,
+    max_value int4 NULL,
+    min_value int4 NULL,
+    card_name varchar(255) NULL,
+    opportunities varchar(4096) NULL,
+    strengths varchar(4096) NULL,
+    test_id varchar(255) NULL,
+    "version" BIGINT DEFAULT 0,
+    CONSTRAINT test_card_pkey PRIMARY KEY (id),
+    CONSTRAINT test_card_fkey FOREIGN KEY (test_id) REFERENCES "test-schema".test(id)
+);

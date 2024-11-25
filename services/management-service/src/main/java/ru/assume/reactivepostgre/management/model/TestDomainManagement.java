@@ -21,4 +21,5 @@ public class TestDomainManagement {
     private String rubricName;
     private Integer order;
     private List<TestParameter> parameters;
+    private List<TestCard> cards;
 }
