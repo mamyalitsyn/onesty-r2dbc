@@ -5,6 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.assume.reactivepostgre.category.model.CategoryDomainManagement;
 import ru.assume.reactivepostgre.category.model.CategoryDomainShort;
+import ru.assume.reactivepostgre.category.model.CategoryPermissionsDomain;
 import ru.assume.reactivepostgre.category.model.RoleSubscriptionPermission;
 import ru.assume.reactivepostgre.category.persistence.CategoryEntity;
 import ru.assume.reactivepostgre.category.persistence.CategoryPermissionEntity;
@@ -36,6 +37,8 @@ public interface CategoryMapper {
     CategoryDomainManagement entityToCategoryDomainManagement(CategoryEntity entity, Set<RoleSubscriptionPermission> permissions);
 
     RoleSubscriptionPermission entityToCategoryPermissions(CategoryPermissionEntity entity);
+
+    CategoryPermissionsDomain fullToShort(CategoryDomainShort categoryDomainShort);
 
 
 }

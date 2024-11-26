@@ -9,10 +9,7 @@ import ru.assume.reactivepostgre.category.model.CategoryDomainManagement;
 import ru.assume.reactivepostgre.category.model.CategoryDomainShort;
 import ru.assume.reactivepostgre.category.model.CategoryPermissionsDomain;
 import ru.assume.reactivepostgre.category.model.RoleSubscriptionPermission;
-import ru.assume.reactivepostgre.category.persistence.CategoryEntity;
-import ru.assume.reactivepostgre.category.persistence.CategoryPermissionEntity;
-import ru.assume.reactivepostgre.category.persistence.CategoryPermissionRepository;
-import ru.assume.reactivepostgre.category.persistence.CategoryRepository;
+import ru.assume.reactivepostgre.category.persistence.*;
 
 import java.util.List;
 import java.util.Set;
@@ -24,23 +21,20 @@ public class CategoryManager {
 
     private final CategoryMapper categoryMapper;
     private final CategoryRepository categoryRepository;
+    private final CategoryRepositoryCustom categoryRepositoryCustom;
     private final CategoryPermissionRepository categoryPermissionRepository;
 
     public Flux<CategoryDomainShort> getCategoriesDomain() {
-        return categoryRepository.findAll()
-                .flatMap(this::loadCategoryWithPermissions);
+        return categoryRepositoryCustom.findCategoriesWithPermissions();
     }
 
     public Flux<CategoryDomainManagement> createCategories(List<CategoryDomainManagement> categories) {
         return Flux.fromIterable(categories)
                 .flatMap(this::saveCategoryWithPermissions);
-
     }
 
     public Flux<CategoryPermissionsDomain> getCategoriesPermissions() {
-        return categoryPermissionRepository.findAll()
-                .collectList()
-                .flatMapMany(this::groupPermissionsByCategory);
+        return categoryRepositoryCustom.findCategoriesWithPermissions().map(categoryMapper::fullToShort);
     }
 
     private Mono<CategoryDomainManagement> saveCategoryWithPermissions(CategoryDomainManagement categoryDomain) {
@@ -60,29 +54,5 @@ public class CategoryManager {
                                 return Mono.just(savedModel);
                             });
                 });
-    }
-
-    private Mono<CategoryDomainShort> loadCategoryWithPermissions(CategoryEntity categoryEntity) {
-        return categoryPermissionRepository.findByCategoryId(categoryEntity.getId())
-                .map(categoryMapper::entityToCategoryPermissions)
-                .collect(Collectors.toSet())
-                .map(permissions -> categoryMapper.entityToCategoryDomainShort(categoryEntity, permissions));
-    }
-
-    private Flux<CategoryPermissionsDomain> groupPermissionsByCategory(List<CategoryPermissionEntity> permissions) {
-        return Flux.fromIterable(
-                permissions.stream()
-                        .collect(Collectors.groupingBy(CategoryPermissionEntity::getCategoryId))
-                        .entrySet()
-                        .stream()
-                        .map(entry -> {
-                            String categoryId = entry.getKey();
-                            Set<RoleSubscriptionPermission> searchPermissions = entry.getValue().stream()
-                                    .map(categoryMapper::entityToCategoryPermissions)
-                                    .collect(Collectors.toSet());
-                            return new CategoryPermissionsDomain(categoryId, searchPermissions);
-                        })
-                        .toList()
-        );
     }
 }
