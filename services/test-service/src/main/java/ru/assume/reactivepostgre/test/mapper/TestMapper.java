@@ -4,12 +4,10 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.assume.reactivepostgre.test.model.QuestionDomainManagement;
+import ru.assume.reactivepostgre.test.model.RoleSubscriptionPermission;
 import ru.assume.reactivepostgre.test.model.TestCard;
 import ru.assume.reactivepostgre.test.model.TestDomainManagement;
-import ru.assume.reactivepostgre.test.persistence.entity.AnswerEntity;
-import ru.assume.reactivepostgre.test.persistence.entity.QuestionEntity;
-import ru.assume.reactivepostgre.test.persistence.entity.TestCardEntity;
-import ru.assume.reactivepostgre.test.persistence.entity.TestEntity;
+import ru.assume.reactivepostgre.test.persistence.entity.*;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.ERROR)
 public interface TestMapper {
@@ -24,6 +22,7 @@ public interface TestMapper {
     @Mapping(target = "parameters", ignore = true)
     @Mapping(target = "cards", ignore = true)
     @Mapping(target = "questions", ignore = true)
+    @Mapping(target = "permissions", ignore = true)
     TestDomainManagement entityToApi(TestEntity api);
 
     @Mapping(target = "id", ignore = true)
@@ -46,4 +45,8 @@ public interface TestMapper {
 
     @Mapping(target = "parameters", ignore = true)
     QuestionDomainManagement.Answer answerEntityToApi(AnswerEntity entity);
+
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "version", ignore = true)
+    TestPermissionEntity permissionApiToEntity(RoleSubscriptionPermission permission, String testId);
 }

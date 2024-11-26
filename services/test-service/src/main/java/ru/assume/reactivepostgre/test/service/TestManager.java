@@ -27,6 +27,7 @@ public class TestManager {
     private final TestCardRepository testCardRepository;
     private final TestParameterMapper testParameterMapper;
     private final TestParameterRepository testParameterRepository;
+    private final TestPermissionRepository testPermissionRepository;
     private final AnswerParameterRepository answerParameterRepository;
     private final TestParameterValueRepository testParameterValueRepository;
 
@@ -41,6 +42,9 @@ public class TestManager {
 
                                     Mono<List<TestParameterEntity>> savedParameters = testParameterRepository.saveAll(parameters)
                                             .collectList();
+
+                                    List<TestPermissionEntity> permissions = test.getPermissions().stream().map(permission -> testMapper.permissionApiToEntity(permission, savedTest.getId())).toList();
+                                    Mono<List<TestPermissionEntity>> savedPermissions = testPermissionRepository.saveAll(permissions).collectList();
 
                                     Mono<Void> processedParameters = savedParameters
                                             .flatMapMany(Flux::fromIterable)
@@ -87,7 +91,8 @@ public class TestManager {
 
                                     return processedParameters
                                             .then(processedCards)
-                                            .then(processedAnswers);
+                                            .then(processedAnswers)
+                                            .then(savedPermissions);
                                 })
                 )
                 .thenMany(Flux.empty());

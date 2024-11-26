@@ -123,3 +123,14 @@ CREATE TABLE "test-schema".test_answer_parameter (
     CONSTRAINT test_answer_param_answer_fkey FOREIGN KEY (answer_id) REFERENCES "test-schema".test_answer(id),
     CONSTRAINT test_answer_param_param_fkey FOREIGN KEY (parameter_id) REFERENCES "test-schema".parameter(id)
 );
+
+CREATE TABLE "test-schema".test_permission (
+    id varchar(255) NOT NULL DEFAULT gen_random_uuid(),
+    "role" varchar(255) NULL,
+    subscriptions text[],
+    "version" BIGINT DEFAULT 0,
+    test_id varchar(255) NOT NULL,
+    CONSTRAINT test_permission_pkey PRIMARY KEY (id),
+    CONSTRAINT test_permission_role_check CHECK (((role)::text = ANY ((ARRAY['BLOCKED_USER'::character varying, 'SUSPENDED_USER'::character varying, 'GENERAL_AUDIENCE'::character varying, 'VERIFIED_USER'::character varying, 'FRIEND'::character varying, 'ADMIN'::character varying, 'PENDING_VERIFICATION'::character varying])::text[]))),
+    CONSTRAINT test_permission_fkey FOREIGN KEY (test_id) REFERENCES "test-schema".test(id)
+);

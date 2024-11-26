@@ -3,6 +3,7 @@ package ru.assume.reactivepostgre.test.model;
 import lombok.*;
 
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -18,4 +19,5 @@ public class TestDomainManagement {
     private List<TestParameter> parameters;
     private List<TestCard> cards;
     private List<QuestionDomainManagement> questions;
+    private Set<RoleSubscriptionPermission> permissions;
 }
