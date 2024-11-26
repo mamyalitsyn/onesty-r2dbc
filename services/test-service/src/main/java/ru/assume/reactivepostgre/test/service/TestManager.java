@@ -6,14 +6,15 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
+import ru.assume.reactivepostgre.test.mapper.TestCardMapper;
 import ru.assume.reactivepostgre.test.mapper.TestMapper;
 import ru.assume.reactivepostgre.test.mapper.TestParameterMapper;
-import ru.assume.reactivepostgre.test.model.QuestionDomainManagement;
-import ru.assume.reactivepostgre.test.model.TestDomainManagement;
+import ru.assume.reactivepostgre.test.model.*;
 import ru.assume.reactivepostgre.test.persistence.*;
 import ru.assume.reactivepostgre.test.persistence.entity.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -22,6 +23,7 @@ public class TestManager {
 
     private final TestMapper testMapper;
     private final TestRepository testRepository;
+    private final TestCardMapper testCardMapper;
     private final AnswerRepository answerRepository;
     private final QuestionRepository questionRepository;
     private final TestCardRepository testCardRepository;
@@ -125,11 +127,81 @@ public class TestManager {
                 .then();
     }
 
+    public Flux<TestDomainShort> getTestsDomain(String userId) {
+        return testRepository.findAll() // Получаем все тесты
+                .flatMap(test -> Mono.zip(
+                        Mono.just(test), // Текущий тест
+                        loadTestParameters(test.getId()), // Загружаем параметры теста
+                        loadTestCards(test.getId()), // Загружаем карточки теста
+                        loadTestQuestions(test.getId()), // Загружаем вопросы теста
+                        loadTestPermissions(test.getId()) // Загружаем разрешения теста
+                ))
+                .map(tuple -> {
+                    TestEntity test = tuple.getT1();
+                    List<TestParameter> parameters = tuple.getT2();
+                    List<TestCard> cards = tuple.getT3();
+                    List<QuestionDomain> questions = tuple.getT4();
+                    Set<RoleSubscriptionPermission> permissions = tuple.getT5();
+
+                    // Формируем структуру TestDomainShort
+                    return new TestDomainShort(
+                            test.getId(),
+                            test.getName(),
+                            test.getRubricId(),
+                            test.getOrderNumber(),
+                            parameters,
+                            cards,
+                            questions,
+                            permissions
+                    );
+                });
+    }
+
     private String findParameterIdByName(List<TestParameterEntity> savedParameters, String parameterName) {
         return savedParameters.stream()
                 .filter(param -> param.getName().equals(parameterName))
                 .findFirst()
                 .map(TestParameterEntity::getId)
                 .orElse(null);
+    }
+
+    private Mono<List<TestParameter>> loadTestParameters(String testId) {
+        return testParameterRepository.findAllByTestId(testId)
+                .flatMap(param -> testParameterValueRepository.findAllByTestParameterId(param.getId())
+                        .collectList()
+                        .map(values -> {
+                            List<TestParameter.ParameterValue> parameterValues = values.stream()
+                                    .map(value -> new TestParameter.ParameterValue(value.getMaxValue(), value.getMinValue(), value.getText()))
+                                    .toList();
+                            return new TestParameter(param.getId(), param.getName(), param.getAbout(), parameterValues);
+                        }))
+                .collectList();
+    }
+
+    private Mono<List<TestCard>> loadTestCards(String testId) {
+        return testCardRepository.findAllByTestId(testId)
+                .map(testCardMapper::entityToApi)
+                .collectList();
+    }
+
+    private Mono<List<QuestionDomain>> loadTestQuestions(String testId) {
+        return questionRepository.findAllByTestId(testId)
+                .flatMap(question -> answerRepository.findAllByQuestionId(question.getId())
+                        .flatMap(answer -> answerParameterRepository.findAllByAnswerId(answer.getId())
+                                .map(param -> new QuestionDomain.Parameter(param.getParameterId(), param.getScore()))
+                                .collectList()
+                                .map(parameters -> new QuestionDomain.Answer(answer.getId(), answer.getScore(), answer.getText(), parameters)))
+                        .collectList()
+                        .map(answers -> new QuestionDomain(question.getId(), question.getParameterId(), question.getText(), answers)))
+                .collectList();
+    }
+
+    private Mono<Set<RoleSubscriptionPermission>> loadTestPermissions(String testId) {
+        return testPermissionRepository.findAllByTestId(testId)
+                .map(permission -> new RoleSubscriptionPermission(
+                        permission.getRole(),
+                        new HashSet<>(permission.getSubscriptions())
+                ))
+                .collect(Collectors.toSet());
     }
 }

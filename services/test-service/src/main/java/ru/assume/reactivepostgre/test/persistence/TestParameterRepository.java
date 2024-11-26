@@ -6,5 +6,5 @@ import ru.assume.reactivepostgre.test.persistence.entity.TestParameterEntity;
 
 public interface TestParameterRepository extends ReactiveCrudRepository<TestParameterEntity, String> {
 
-    Flux<TestParameterEntity> findByTestId(String testId);
+    Flux<TestParameterEntity> findAllByTestId(String testId);
 }

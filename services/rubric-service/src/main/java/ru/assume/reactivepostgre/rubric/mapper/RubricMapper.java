@@ -4,6 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import ru.assume.reactivepostgre.rubric.model.RubricDomainManagement;
+import ru.assume.reactivepostgre.rubric.model.RubricDomainShort;
 import ru.assume.reactivepostgre.rubric.persistence.RubricEntity;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.ERROR)
@@ -16,5 +17,8 @@ public interface RubricMapper {
     @Mapping(target = "order", source = "orderNumber")
     @Mapping(target = "categoryName", ignore = true)
     RubricDomainManagement entityToRubricDomainManagement(RubricEntity entity);
+
+    @Mapping(target = "order", source = "orderNumber")
+    RubricDomainShort entityToRubricDomainShort(RubricEntity entity);
 
 }
