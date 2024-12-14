@@ -1,5 +1,6 @@
 package ru.assume.reactivepostgre.category.persistence;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.r2dbc.core.DatabaseClient;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
@@ -10,16 +11,11 @@ import ru.assume.reactivepostgre.category.model.SubscriptionType;
 
 import java.util.*;
 
-import static java.util.Collections.emptyList;
-
 @Repository
+@RequiredArgsConstructor
 public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
 
     private final DatabaseClient databaseClient;
-
-    public CategoryRepositoryCustomImpl(DatabaseClient databaseClient) {
-        this.databaseClient = databaseClient;
-    }
 
     @Override
     public Flux<CategoryDomainShort> findCategoriesWithPermissions() {

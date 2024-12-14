@@ -27,10 +27,6 @@ public interface CategoryMapper {
     @Mapping(target = "categoryId", ignore = true)
     CategoryPermissionEntity categoryPermissionToEntity(RoleSubscriptionPermission dto);
 
-    @Mapping(target = "order", source = "entity.orderNumber")
-    @Mapping(target = "searchPermissions", source = "permissions")
-    CategoryDomainShort entityToCategoryDomainShort(CategoryEntity entity, Set<RoleSubscriptionPermission> permissions);
-
     @Mapping(target = "tempId", ignore = true)
     @Mapping(target = "order", source = "entity.orderNumber")
     @Mapping(target = "searchPermissions", source = "permissions")
